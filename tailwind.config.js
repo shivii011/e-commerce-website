@@ -14,7 +14,6 @@ module.exports = {
       'dark-charcoal': '#2f2f2f',
     },
   },
-    
     fontFamily: {
       'roboto': ['Roboto', 'sans-serif'],
     },
