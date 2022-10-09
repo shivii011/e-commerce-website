@@ -1,10 +1,9 @@
 import './App.css';
-import NavBar from './components/NavBar';
-
+import FeaturedSection from './components/FeaturedSection';
 function App() {
   return (
     <div className="App">
-      <NavBar />
+<FeaturedSection/>
     </div>
   )
 }
