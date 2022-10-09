@@ -5,6 +5,7 @@ import App from './App';
 
 // eslint-disable-next-line
 import "swiper/css/bundle";
+import "./components/swiperStyle.css"
 
 import reportWebVitals from './reportWebVitals';
 
