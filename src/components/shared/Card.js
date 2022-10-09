@@ -2,7 +2,7 @@ import React from 'react';
 import BuyButton from './BuyButton';
 import FavouriteButton from './FavouriteButton';
 import img from '../../assets/mob-image.jpg';
-import Data from '../../utils/data';
+import {Data} from '../../utils/data';
 // function Card() {
 // const listItem= Data.map((element)=>{<div className='h-[20rem] w-[14rem] group'>
 // <div className=''> <img className=' hover:object-center hover:border-solid hover:border-2 group-hover:border-yellow-400' src={img} alt='' /></div>
@@ -24,22 +24,19 @@ import Data from '../../utils/data';
 // }
 
 
-function Card() {
+const Card = () => {
   return (
     <div>
- {Data.map((data) => (
-   <div>
-   <div className="m-auto">
-       <div>{data.itemName}</div>
-       <div>{data.price} </div>
-   </div>
-   </div>
-                
-            
-        ))}
+      {Data.map((data) => (
+      <div>
+        <div className="m-auto">
+          <div>{data.ItemName}</div>
+          <div>{data.Price} </div>
+        </div>
+      </div>     
+      ))}
     </div>
   )
 }
-
 
 export default Card
