@@ -1,4 +1,4 @@
- Data=[{'ItemName':'Laptop',
+ const Data=[{'ItemName':'Laptop',
     'Price':'$600'},
     {'ItemName':'key Board',
     'Price':'$10'},
