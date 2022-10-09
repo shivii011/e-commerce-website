@@ -23,7 +23,7 @@ const HeroSection = () => {
     // Creating variables for styling
     const headingStyle = "text-gold-web-golden font-extrabold text-xl ml-8"
     const descStyle = "text-yellow-50 font-light text-xs py-4 pl-8 pr-10"
-    const btnStyle = "text-[14px] font-semibold py-0 px-2 ml-8 border-none bg-gold-web-golden text-dark-charcoal hover:bg-yellow-50 hover:text-dark-charcoal"
+    const btnStyle = "border-none ml-8 bg-[#FFD61E] text-dark-charcoal hover:text-gold-web-golden hover:bg-dark-charcoal hover:bg-opacity-50"
 
   return (
     <div className="bg-hero tracking-wider">
@@ -46,7 +46,7 @@ const HeroSection = () => {
                 <div className="m-auto">
                     <div className={headingStyle}>{data.heading}</div>
                     <div className={descStyle}> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum vel et qui modi ad porro amet officia reprehenderit aut consectetur, itaque praesentium velit ut animi incidunt dolorem nisi iste veritatis. </div>
-                    <Button value={"Buy Now"} className={btnStyle} />
+                    <Button value={<FaArrowRight/>} className={btnStyle} />
                 </div>
             </SwiperSlide>
         ))}
