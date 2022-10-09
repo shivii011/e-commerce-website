@@ -4,11 +4,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
+import Card from './shared/Card'
 export default function FeaturedSection() {
   return (
     <>
+    <p className=" text-2xl font-semibold text-blue-500 ">Featured Section</p>
       <Swiper
-        slidesPerView={4}
+        slidesPerView={6}
         centeredSlides={true}
         spaceBetween={30}
         grabCursor={true}
@@ -18,15 +20,15 @@ export default function FeaturedSection() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide><Card/></SwiperSlide>
+        <SwiperSlide><Card/></SwiperSlide>
+        <SwiperSlide><Card/></SwiperSlide>
+        <SwiperSlide><Card/></SwiperSlide>
+        <SwiperSlide><Card/></SwiperSlide>
+        <SwiperSlide><Card/></SwiperSlide>
+        <SwiperSlide><Card/></SwiperSlide>
+        <SwiperSlide><Card/></SwiperSlide>
+        <SwiperSlide><Card/></SwiperSlide>
       </Swiper>
     </>
   );
