@@ -8,7 +8,7 @@ function Newslatter() {
                 <div className='col-span-2'>...and receive <strong className=' text-lg'>$10 coupon for first shopping</strong></div></div>
 
             <div className='flex col-span-4'>  <input type="email" id="email" class=" w-3/5 h-10 rounded-r-xl rounded-full text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block " placeholder="john.doe@company.com" required />
-                <Button className={'px-1 py-0 h-10 rounded-r-2xl rounded-full border-none'} value='Sign Up' />
+                <Button className={'px-1 py-0 h-10 rounded-r-2xl rounded-full border-none bg-slate-900 text-yellow-400 hover:text-slate-900'} value='Sign Up' />
             </div>
         </div>
     )
@@ -17,5 +17,3 @@ function Newslatter() {
 export default Newslatter
 
 
-{/* <div className=' col-span-1'><i className="text-5xl fa  fa-paper-plane"/></div>
-            <div className='col-span-2'>Sign up to Newslatter</div> */}
