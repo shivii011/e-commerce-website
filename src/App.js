@@ -1,12 +1,10 @@
-import './App.css';
-import Card from './components/shared/Card';
-function App() {
+const App = () => {
   return (
-    <div className="App">
-     E commerce
-     <Card/>
+    <div>
+      
     </div>
   )
 }
 
-export default App;
+export default App
+
