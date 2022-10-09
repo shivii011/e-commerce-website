@@ -6,7 +6,7 @@ function App() {
      E commerce
      <Card/>
     </div>
-  );
+  )
 }
 
 export default App;
