@@ -1,12 +1,9 @@
-// Importing Button Component
-import Button from './shared/Button'
-// Importing Data from util folder
+
 import { HeroSectionData } from '../utils/HeroSectionData';
 
-// Importing react icons
+// Importing react-icons for using in the button
 import { FaArrowRight } from 'react-icons/fa'
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
 
 // Import Swiper styles
@@ -15,15 +12,14 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./swiperStyle.css"
 
-// Import required modules
 import { Pagination, Navigation } from "swiper";
 
 
 const HeroSection = () => {
-    // Creating variables for styling
+    // Creating variables for styling mapped data
     const headingStyle = "text-gold-web-golden font-extrabold text-xl ml-8"
     const descStyle = "text-yellow-50 font-light text-xs py-4 pl-8 pr-10"
-    const btnStyle = "border-none ml-8 bg-[#FFD61E] text-dark-charcoal hover:text-gold-web-golden hover:bg-dark-charcoal hover:bg-opacity-50"
+    const btnStyle = "flex ml-8 bg-gold-web-golden w-32 px-2 py-1 justify-center text-dark-charcoal font-bold hover:text-gold-web-golden hover:bg-dark-charcoal cursor-pointer"
 
   return (
     <div className="bg-hero tracking-wider">
@@ -39,14 +35,22 @@ const HeroSection = () => {
             modules={[Pagination, Navigation]}
             className="mySwiper"
         >
-            {/* Mapping data fetched from the object */}
+            {/* Mapping data fetched from the object to omit repeated code */}
             {HeroSectionData.map((data) => (
             <SwiperSlide className="flex" key={data.id}>
                 <img src={data.img} alt="" className="w-1/2" />
                 <div className="m-auto">
                     <div className={headingStyle}>{data.heading}</div>
                     <div className={descStyle}> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum vel et qui modi ad porro amet officia reprehenderit aut consectetur, itaque praesentium velit ut animi incidunt dolorem nisi iste veritatis. </div>
-                    <Button value={<FaArrowRight/>} className={btnStyle} />
+                    <div className={btnStyle}>
+                      <span>
+                        Buy Now
+                      </span>
+                      <span>
+                        <FaArrowRight className="mt-1.5 px-1 w-6" />
+                      </span>
+                      
+                    </div>
                 </div>
             </SwiperSlide>
         ))}
