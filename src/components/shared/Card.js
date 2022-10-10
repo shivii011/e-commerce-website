@@ -1,39 +1,26 @@
 import React from 'react';
 import BuyButton from './BuyButton';
 import FavouriteButton from './FavouriteButton';
-import img from '../../assets/mob-image.jpg';
-import {Data} from '../../utils/data';
-// function Card() {
-// const listItem= Data.map((element)=>{<div className='h-[20rem] w-[14rem] group'>
-// <div className=''> <img className=' hover:object-center hover:border-solid hover:border-2 group-hover:border-yellow-400' src={img} alt='' /></div>
-// <div> <p className='text-lg text-blue-500 font-semibold'>{element.ItemName}</p>
-//   <div className='flex justify-between m-3 opacity-0 group-hover:opacity-100 '>
-//     <p className='text-lg text-blue-500'>{element.Price}</p>
-//     <div className='flex '>
-//       <FavouriteButton className='mr-2' />
-//       <BuyButton className='' />
-//     </div>
-//   </div>
-// </div>
-// </div>}
-// )
-//   return (
-//     <div>{listItem}</div>
-//   )
-  
-// }
+import { Data } from '../../utils/data';
 
 
-const Card = () => {
+const Card = (className) => {
   return (
-    <div>
+    <div className='h-[20rem] w-[14rem] group'>
       {Data.map((data) => (
-      <div>
-        <div className="m-auto">
-          <div>{data.ItemName}</div>
-          <div>{data.Price} </div>
-        </div>
-      </div>     
+          <div className={`group-hover:shadow-lg ${className}`}>
+            <div className=''><img className=' h-[14rem]hover:object-center hover:border-solid hover:border-2 group-hover:border-yellow-400' src={data.image} alt='' /></div>
+            <div>
+              <p className='text-lg text-blue-500 font-semibold'>{data.ItemName}</p>
+              <div className='flex justify-between m-3 p-2 opacity-0 group-hover:opacity-100 '>
+                  <p className='text-lg text-blue-500'>{data.Price}</p>
+                  <div className='flex '>
+                    <FavouriteButton className='mr-2' />
+                    <BuyButton className='' />
+                  </div>
+                </div>
+            </div>
+          </div>
       ))}
     </div>
   )
