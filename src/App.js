@@ -1,11 +1,11 @@
-import './App.css';
+import Contact from "./pages/Contact"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-     E commerce
+    <div>
+      <Contact />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
