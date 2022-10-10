@@ -1,11 +1,10 @@
-import './App.css';
-import HeroSection from './components/HeroSection';
-function App() {
+const App = () => {
   return (
-    <div className="App">
-
+    <div>
+      
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+

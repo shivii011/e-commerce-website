@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
@@ -13,8 +14,8 @@ module.exports = {
         'gold-web-golden' : '#FFD61E',
         'maximum-yellow' : '#FFF835',
       },
-      backgroundImage: {
-        'hero' : "url('/src/assets/gray-bg.jpg')",
+      fontFamily: {
+      'roboto': ['Roboto', 'sans-serif'],
       },
     },
   },
