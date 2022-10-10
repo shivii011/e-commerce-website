@@ -31,10 +31,10 @@ const Contact = () => {
     }
     
     return (
-        <div className="bg-black">
-            <div className="text-center">
-                <div className="text-white opacity-30 text-9xl font-bold absolute -z-1">CONTACT</div>
-                <div className="text-gold-web-golden text-5xl font-bold relative z-1 inset-12">GET IN TOUCH</div>
+        <div className="bg-black h-screen">
+            <div className="text-center pb-8">
+                <div className="text-white opacity-30 text-9xl font-bold absolute -z-1 inset-x-52">CONTACT</div>
+                <div className="text-gold-web-golden text-5xl font-bold relative z-1 inset-y-12">GET IN TOUCH</div>
             </div>
 
             <div className="flex m-12 mb-0 gap-16 justify-around">
