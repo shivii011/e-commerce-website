@@ -1,5 +1,4 @@
 import React from 'react'
-import './footer.css'
 import {FooterSectionDataIcons} from '../../utils/FooterSectionData'
 import {FooterSectionDataFind} from '../../utils/FooterSectionData'
 import {FooterSectionDataNavigation} from '../../utils/FooterSectionData'
@@ -31,7 +30,7 @@ const Footer = () => {
                                     className={
                                         `${
                                             data.icon
-                                        } text-gray-600 text-2xl `
+                                        } text-gray-600 text-2xl`
                                     }/>
                             </div>
                         ))
@@ -79,7 +78,7 @@ const Footer = () => {
                     } </div>
                 </div>
             </div>
-            <div className='reserved  bg-gray-200 '>
+            <div className='reserved  bg-gray-200 p-2 '>
                 <div className='left'>
                     <i className="fa fa-copyright"></i>
                     <strong>Name</strong>-All Rights Reserved</div>
