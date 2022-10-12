@@ -1,9 +1,17 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    screens: {
+      'gf': '250px',
+      'xs': '370px',
+      ...defaultTheme.screens,
+    },
     extend: {
       colors: {
         'purple': '#6600A5',
@@ -15,6 +23,10 @@ module.exports = {
       },
       backgroundImage: {
         'gray-bg': "url('/src/assets/gray-bg.jpg')",
+      },
+      }, 
+      backgroundImage: {
+        'main': "url(/src/assets/test-img.jpg)"
       },
     },
   },
