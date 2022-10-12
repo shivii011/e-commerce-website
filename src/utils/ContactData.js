@@ -2,7 +2,7 @@ import { FaEnvelope } from "react-icons/fa"
 import { FaPhoneAlt } from "react-icons/fa"
 
 // Assigning icon style
-const faIconsStyle = "text-gold-web-golden w-12 h-12 m-auto"
+const faIconsStyle = "text-gold-web-golden m-auto gf:w-8 gf:h-8 sm:w-12 sm:h-12"
 
 export const ContactIcons = [
     {
@@ -19,7 +19,6 @@ export const ContactIcons = [
     },
 ]
 
-    
 
 export const FormFields = [
     {

@@ -1,9 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    screens: {
+      'gf': '250px',
+      'xs': '370px',
+      ...defaultTheme.screens,
+    },
     extend: {
       colors: {
         'purple': '#6600A5',
@@ -16,16 +22,7 @@ module.exports = {
       backgroundImage: {
         'main': "url(/src/assets/test-img.jpg)"
       },
-      screens: {
-        'gf': '250px',
-        'xs': '370px',
-      },
-      // theme: {
-      //   screens: {
-      //     'gf': '250px',
-      //     'xs': '370px',
-      //   },
-      // },
+      
     },
   },
   plugins: [],
