@@ -1,9 +1,8 @@
-import Card from "./components/shared/Card"
-
+import Contact from './pages/Contact.js'
 const App = () => {
   return (
     <div>
-      <Card/>
+      <Contact />
     </div>
   )
 }
