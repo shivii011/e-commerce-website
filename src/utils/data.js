@@ -1,8 +1,9 @@
 import img from './../assets/mob-image.jpg';
  export const Data = [
     {
-        'ItemName':'Laptop',
-        'Price':'$600',
+        'ItemType':'Smart Phone',
+        'ItemName':'Iphone-13',
+        'Price':'$200',
         'image':img
     }
    
