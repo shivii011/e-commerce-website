@@ -23,12 +23,10 @@ module.exports = {
       },
       backgroundImage: {
         'gray-bg': "url('/src/assets/gray-bg.jpg')",
-      },
-      }, 
-      backgroundImage: {
-        'main': "url(/src/assets/test-img.jpg)"
+        'main': "url(/src/assets/test-img.jpg)",
       },
     },
   },
   plugins: [],
 }
+  
