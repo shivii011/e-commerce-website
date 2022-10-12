@@ -24,6 +24,7 @@ module.exports = {
       backgroundImage: {
         'gray-bg': "url('/src/assets/gray-bg.jpg')",
         'main': "url(/src/assets/test-img.jpg)",
+        'hero': "url('/src/assets/gray-bg.jpg')",
       },
     },
   },
