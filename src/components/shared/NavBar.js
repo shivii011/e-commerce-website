@@ -1,5 +1,5 @@
 import React from 'react'
-import SearchBar from './SearchBar'
+import SearchBar from '../SearchBar'
 import { FaUser } from 'react-icons/fa'
 import { FaShoppingCart } from 'react-icons/fa'
 import { FaHeart } from 'react-icons/fa'
