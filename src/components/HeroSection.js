@@ -17,9 +17,9 @@ import { Pagination, Navigation } from "swiper";
 
 const HeroSection = () => {
     // Creating variables for styling mapped data
-    const headingStyle = "text-gold-web-golden font-extrabold text-xl ml-8"
-    const descStyle = "text-yellow-50 font-light text-xs py-4 pl-8 pr-10"
-    const btnStyle = "flex ml-8 bg-gold-web-golden w-32 px-2 py-1 justify-center text-dark-charcoal font-bold hover:text-gold-web-golden hover:bg-dark-charcoal cursor-pointer"
+    const headingStyle = "text-gold-web-golden font-extrabold text-3xl ml-8"
+    const descStyle = "text-yellow-50 font-light text-sm py-4 pl-8 pr-10"
+    const btnStyle = "flex ml-8 bg-gold-web-golden w-32 px-2 py-1.5 justify-center text-dark-charcoal font-bold hover:text-gold-web-golden hover:bg-dark-charcoal cursor-pointer"
 
   return (
     <div className="bg-hero tracking-wider">

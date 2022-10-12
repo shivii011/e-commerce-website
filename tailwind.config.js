@@ -14,8 +14,8 @@ module.exports = {
         'gold-web-golden' : '#FFD61E',
         'maximum-yellow' : '#FFF835',
       },
-      fontFamily: {
-      'roboto': ['Roboto', 'sans-serif'],
+      backgroundImage: {
+        'hero': "url('/src/assets/gray-bg.jpg')",
       },
     },
   },
