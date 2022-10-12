@@ -16,6 +16,16 @@ module.exports = {
       backgroundImage: {
         'main': "url(/src/assets/test-img.jpg)"
       },
+      screens: {
+        'gf': '250px',
+        'xs': '370px',
+      },
+      // theme: {
+      //   screens: {
+      //     'gf': '250px',
+      //     'xs': '370px',
+      //   },
+      // },
     },
   },
   plugins: [],

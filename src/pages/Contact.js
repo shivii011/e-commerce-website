@@ -31,18 +31,55 @@ const Contact = () => {
     }
     
     return (
+        // <div className="bg-black h-screen">
+        //     <div className="text-center pb-8">
+        //         <div className="text-white opacity-30 text-9xl font-bold absolute -z-1 inset-x-52">CONTACT</div>
+        //         <div className="text-gold-web-golden text-5xl font-bold relative z-1 inset-y-12">GET IN TOUCH</div>
+        //     </div>
+
+        //     <div className="flex m-12 mb-0 gap-16 justify-around">
+        //         <div className="w-full">
+        //             <div className="text-white text-2xl font-semibold my-4">FOR QUERIES</div>
+        //             <div className="text-white font-extralight my-4">Want to get in touch? We would love to hear from you. Drop an email or directly talk to a member of our sales team.</div>
+
+        //             {/* Mapping Contact Details */}
+        //             { ContactIcons.map((data) => (
+        //                 <div className="text-white font-extralight mb-4" key={data.id}>
+        //                     <div>{data.icon}</div>
+        //                     <div>{data.title}</div>
+        //                     <div>{data.content}</div>
+        //                 </div>
+        //                 ))
+        //             }
+        //         </div>
+        //         <form className="my-8 w-full" onSubmit={onSubmit}>
+        //             {/* Mapping Form Fields */}
+        //             {/* Bug */}
+        //             {FormFields.map((fields) => (
+        //                 <input key={fields.id} type={fields.type} name={fields.name} value={fields.value} placeholder={fields.placeholder} className={fieldStyle} onChange={valueHandler}/>
+        //             ))}
+        //             <Button value="Submit" className={btnStyle} />
+        //         </form>
+                
+        //     </div>
+            
+        // </div>
         <div className="bg-black h-screen">
-            <div className="text-center pb-8">
-                <div className="text-white opacity-30 text-9xl font-bold absolute -z-1 inset-x-52">CONTACT</div>
-                <div className="text-gold-web-golden text-5xl font-bold relative z-1 inset-y-12">GET IN TOUCH</div>
+            <div className="text-center">
+                <div className="absolute inset-x-0 text-white font-bold tracking-wider opacity-30 gf:text-5xl xs:text-6xl md:text-9xl md:tracking-normal">CONTACT</div>
+                <div className="relative inset-y-4 text-2xl text-gold-web-golden font-bold gf:inset-y-3 gf:text-xl xs:inset-y-4 xs:text-2xl md:inset-y-12 md:text-5xl">GET IN TOUCH</div>
             </div>
 
-            <div className="flex m-12 mb-0 gap-16 justify-around">
-                <div className="w-full">
-                    <div className="text-white text-2xl font-semibold my-4">FOR QUERIES</div>
-                    <div className="text-white font-extralight my-4">Want to get in touch? We would love to hear from you. Drop an email or directly talk to a member of our sales team.</div>
-
-                    {/* Mapping Contact Details */}
+            <div className="my-12 text-center">
+                <div>
+                    <div className="text-lg text-white font-bold">
+                        FOR QUERIES
+                    </div>
+                    <p className="text-white my-4">
+                        Want to get in touch? We would love to hear from you. Drop an email or directly talk to a member of our sales team.
+                    </p>
+                </div>
+                <div className="sm:flex sm:justify-evenly">
                     { ContactIcons.map((data) => (
                         <div className="text-white font-extralight mb-4" key={data.id}>
                             <div>{data.icon}</div>
@@ -52,17 +89,7 @@ const Contact = () => {
                         ))
                     }
                 </div>
-                <form className="my-8 w-full" onSubmit={onSubmit}>
-                    {/* Mapping Form Fields */}
-                    {/* Bug */}
-                    {FormFields.map((fields) => (
-                        <input key={fields.id} type={fields.type} name={fields.name} value={fields.value} placeholder={fields.placeholder} className={fieldStyle} onChange={valueHandler}/>
-                    ))}
-                    <Button value="Submit" className={btnStyle} />
-                </form>
-                
             </div>
-            
         </div>
     )
 }
