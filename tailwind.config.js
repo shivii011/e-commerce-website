@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
 const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -18,11 +20,14 @@ module.exports = {
         'gold-web-golden': '#FFD61E',
         'maximum-yellow': '#FFF835',
         'dark-charcoal': '#2f2f2f',
+      },
+      backgroundImage: {
+        'gray-bg': "url('/src/assets/gray-bg.jpg')",
+      },
       }, 
       backgroundImage: {
         'main': "url(/src/assets/test-img.jpg)"
       },
-      
     },
   },
   plugins: [],
