@@ -1,9 +1,8 @@
-import Contact from "./pages/Contact"
 
 const App = () => {
   return (
     <div>
-      <Contact />
+
     </div>
   )
 }
