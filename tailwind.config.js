@@ -13,6 +13,11 @@ module.exports = {
       'gold-web-golden': '#FFD61E',
       'maximum-yellow': '#FFF835',
       'dark-charcoal': '#2f2f2f',
+      'white':'#fff',
+      'black':"#000000",
+      'gray':"#C5C5C5",
+      "dark-grey":"#333e48",
+      "green":"#367E18"
     },
   },
     fontFamily: {
