@@ -5,15 +5,15 @@ import "swiper/css";
 import "swiper/css/pagination";
 import {Pagination} from "swiper";
 import Card from './shared/Card'
- 
+
 
 export default function FeaturedSection(Slides) {
-   Slides=1;  
-   
+    Slides = 1;
+
     return (
         <div className="">
-            <p className=" justify-center text-2xl font-semibold text-blue-500 ">Featured Section</p>
-            {/* <Swiper slidesPerView={`${Slides}`}
+            <p className="text-center text-2xl font-semibold text-blue-500 ">Featured Section</p>
+            <Swiper slidesPerView={1}
                 centeredSlides={true}
                 spaceBetween={30}
                 grabCursor={true}
@@ -22,30 +22,27 @@ export default function FeaturedSection(Slides) {
                 }
                 modules={
                     [Pagination]
-                }
-               >
-                <SwiperSlide><Card/></SwiperSlide>
-                <SwiperSlide><Card/></SwiperSlide>
-                <SwiperSlide><Card/></SwiperSlide>
-                <SwiperSlide><Card/></SwiperSlide>
-                <SwiperSlide><Card/></SwiperSlide>
-                <SwiperSlide><Card/></SwiperSlide>
-                <SwiperSlide><Card/></SwiperSlide>
-                <SwiperSlide><Card/></SwiperSlide>
-                <SwiperSlide><Card/></SwiperSlide>
-            </Swiper> */}
+            } className="m-10">
+                <SwiperSlide className="flex mx-[5rem] block ">
 
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-    <div ><Card className=""/></div>
-    <div><Card/></div>
-    <div><Card/></div>
-    <div><Card/></div>
-    <div><Card/></div>
-    <div><Card/></div>
-    <div><Card/></div>
-    <div><Card/></div>
+                    <div><Card className='flex'/>
+                        <Card/></div>
+                    <div><Card/>
+                        <Card/></div>
+                    <div><Card/>
+                        <Card/></div>
+                </SwiperSlide>
+                <SwiperSlide className="flex">
 
-</div>
+                    <div className="m-5"><Card/>
+                        <Card/></div>
+                    <div><Card/>
+                        <Card/></div>
+                    <div><Card/>
+                        <Card/></div>
+                </SwiperSlide>
+
+            </Swiper>
         </div>
     );
 }
