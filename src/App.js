@@ -1,4 +1,3 @@
-
 const App = () => {
   return (
     <div>
@@ -8,4 +7,3 @@ const App = () => {
 }
 
 export default App
-
