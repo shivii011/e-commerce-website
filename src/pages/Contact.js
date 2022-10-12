@@ -5,8 +5,8 @@ import Button from "../components/shared/Button"
 
 
 const Contact = () => {
-    const fieldStyle = "my-4 px-2 py-1 bg-transparent border-2 text-white block mx-auto w-9/12"
-    const btnStyle = "border-none bg-gold-web-golden text-dark-charcoal font-bold rounded-2xl my-4 px-[16px] py-[2px] hover:text-gold-web-golden hover:bg-dark-charcoal"
+    const fieldStyle = "my-4 px-2 py-1 bg-transparent border-2 text-white block mx-auto w-9/12 lg:w-full"
+    const btnStyle = "border-none bg-gold-web-golden text-dark-charcoal font-bold rounded-2xl my-4 px-8 py-2 hover:text-gold-web-golden hover:bg-dark-charcoal lg:float-left"
 
     // Initialing state variable with key names and empty value in order to update them on change
     const [details, setDetails] = useState({})
@@ -32,7 +32,7 @@ const Contact = () => {
                 <div className="relative inset-y-4 text-2xl text-gold-web-golden font-bold gf:inset-y-3 gf:text-xl xs:inset-y-4 xs:text-2xl md:inset-y-12 md:text-5xl">GET IN TOUCH</div>
             </div>
 
-            <div className="lg:flex lg:gap-12 md:my-24 px-2 md:px-12">
+            <div className="lg:flex lg:justify-evenly lg:gap-64 md:my-16 px-2 md:px-12">
                 <div className="my-12 text-center lg:flex-col lg:w-2/5">
                     <div className="lg:text-left">
                         <div className="text-lg text-white font-bold md:text-2xl">
