@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './shared/Button'
 import "@fontsource/roboto";
+import {FaCheck} from 'react-icons/fa';
 const ArrayLogin = [
     {
         "label": "Username or email address*",
@@ -64,7 +65,7 @@ const LoginPage = () => {
                             {
                             data.label
                         }</label><br/>
-                        <input className=' border-2 border-gray rounded-xl w-5/6 h-10 text-lg px-2' 
+                        <input className=' border-2 border-gray rounded-xl w-5/6 h-10 text-lg px-2'
                             type={
                                 data.type
                             }/>
@@ -74,11 +75,24 @@ const LoginPage = () => {
                 <p className='my-[1rem] font-normal w-6/7'>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</p>
                 <Button value="Register" className=' border-2 rounded  hover:border-2 hover:text-white hover:bg-black py-2 px-4 text-lg'/>
 
+                <div className='p-2'>
+                    <div className='flex'>
+                        <FaCheck className='text-green '/><p className='pl-3'>Speed your way through checkout</p>
+                    </div>
+                    <div className='flex'>
+                        <FaCheck className='text-green '/><p className='pl-3'>Track your orders easily</p>
+                    </div>
+                    <div className='flex'>
+                        <FaCheck className='text-green '/><p className='pl-3'>Keep a record of all your purchases</p>
+                    </div>
+                </div>
             </div>
         </div>
     )
 }
 
 export default LoginPage
-//  sm:w-1 md:w-1 lg:w-1/2
 // sm:w-1 md:w-1 lg:w-1/2
+// sm:w-1 md:w-1 lg:w-1/2
+// AiOutlineCheck
+// BsCheckLg
