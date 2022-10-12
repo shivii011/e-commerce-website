@@ -6,8 +6,9 @@ import {FooterSectionDataCustomer} from '../../utils/FooterSectionData'
 const Footer = () => {
     return (
         <div>
-            <div className='footer bg-gray-100 grid grid-cols-7 py-5'>
-                <div className='contianer-1 col-span-3'>
+            
+            <div className='footer bg-gray-100 grid grid-cols-7 p-5'>
+                <div className='contianer-1 col-span-3 ml-5'>
                     <div className='text-4xl'>
                         LOGO</div>
 
@@ -19,7 +20,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className=''>
-                        <p className='text-xl'>Contact Info</p>
+                        <p className='text-2xl'>Contact Info</p>
                         <p>27 MG Road Indore M.P. India</p>
                     </div>
                     <div className='flex px-10'>
@@ -37,13 +38,13 @@ const Footer = () => {
                     } </div>
                 </div>
 
-                <div className='contianer-2 col-span-4 grid grid-cols-3'>
-                    <div className='cont-1 text-lg'>
+                <div className='contianer-2 col-span-4 grid grid-cols-7'>
+                    <div className='cont-1 text-lg col-span-3'>
                         <p className='text-2xl font-semibold'>Find It Fast</p>
 
                         {
                         FooterSectionDataFind.map((data) => (
-                            <p>
+                            <p className='pt-1'>
                                 <a href='#' className="">
                                     {
                                     data.Item
@@ -51,12 +52,12 @@ const Footer = () => {
                             </p>
                         ))
                     } </div>
-                    <div className='cont-2 text-lg'>
+                    <div className='cont-2 text-lg col-span-2'>
                         <p className='text-2xl font-semibold'>Navigation</p>
 
                         {
                         FooterSectionDataNavigation.map((data) => (
-                            <p>
+                            <p className='pt-1'>
                                 <a href='#' className="">
                                     {
                                     data.Item
@@ -64,11 +65,11 @@ const Footer = () => {
                             </p>
                         ))
                     } </div>
-                    <div className='cont-3 text-lg'>
+                    <div className='cont-3 text-lg col-span-2'>
                         <p className='text-2xl font-semibold'>Customer Care</p>
                         {
                         FooterSectionDataCustomer.map((data) => (
-                            <p>
+                            <p className='pt-1'>
                                 <a href='#' className="">
                                     {
                                     data.Item
@@ -79,10 +80,9 @@ const Footer = () => {
                 </div>
             </div>
             <div className='reserved  bg-gray-200 p-2 '>
-                <div className='left'>
+                <div className='text-center'>
                     <i className="fa fa-copyright"></i>
                     <strong>Name</strong>-All Rights Reserved</div>
-
             </div>
         </div>
     )
