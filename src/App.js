@@ -1,15 +1,13 @@
 import './App.css';
-import NavBar from './components/NavBar';
-import Footer from './components/shared/Footer';
+import Wishlist from './components/Wishlist'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <NavBar />
-     E commerce
-     <Footer/>
+    <Wishlist/>
     </div>
   )
 }
 
-export default App;
+export default App
+
