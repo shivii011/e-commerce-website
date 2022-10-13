@@ -1,4 +1,4 @@
- Data=[{'ItemName':'Laptop',
+export const Data=[{'ItemName':'Laptop',
     'Price':'$600'},
     {'ItemName':'key Board',
     'Price':'$10'},
@@ -7,4 +7,4 @@
     {'ItemName':'Computer',
     'Price':'$300'}
     ]
-export default Data
+//export default Data
