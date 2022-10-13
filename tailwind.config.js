@@ -7,16 +7,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-      'purple': '#6600A5',
-      'russian-voilet': '#2D0F51',
-      'electric-purple': '#AF44F2',
-      'gold-web-golden': '#FFD61E',
-      'maximum-yellow': '#FFF835',
-      'dark-charcoal': '#2f2f2f',
-    },
-  },
-    fontFamily: {
+        "yellow":"#fff835",
+        'purple':'#6600A5',
+        'russian-violet':'#2D0F51',
+        'white':'#fff',
+        'black':"#000000",
+        'gray':"#C5C5C5",
+        "dark-gray":"#333e48",
+        "green":"#367E18"
+      },
+      fontFamily: {
       'roboto': ['Roboto', 'sans-serif'],
+      },
     },
   },
   plugins: [],
