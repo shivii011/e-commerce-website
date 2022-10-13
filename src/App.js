@@ -1,11 +1,11 @@
 import './App.css';
-import Footer from './components/shared/Footer';
+import MainFooter from './components/shared/MainFooter';
 
 const App = () => {
   return (
     <div className="App">
      E commerce
-     <Footer/>
+   <MainFooter/>
     </div>
   )
 }

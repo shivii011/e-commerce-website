@@ -3,9 +3,9 @@ import {FooterSectionDataIcons} from '../../utils/FooterSectionData'
 import {FooterSectionDataFind} from '../../utils/FooterSectionData'
 import {FooterSectionDataNavigation} from '../../utils/FooterSectionData'
 import {FooterSectionDataCustomer} from '../../utils/FooterSectionData'
-const Footer = () => {
+const Footer = ( className) => {
     return (
-        <div>
+        <div className={`${className}`}>
             
             <div className='footer bg-gray-100 grid grid-cols-7 p-5'>
                 <div className='contianer-1 col-span-3 ml-5'>
