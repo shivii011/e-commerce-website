@@ -23,18 +23,20 @@ export default function FeaturedSection(Slides) {
                 modules={
                     [Pagination]
             } className="m-10">
-                <SwiperSlide className="flex mx-[5rem] block ">
+                <SwiperSlide className="block sm:flex-col md:flex-row lg:flex-row ">
 
-                    <div><Card className='flex'/>
+                    <div className=''>
+                        <Card />
+                        <Card/>
+                        </div>
+                    <div className=''><Card/>
                         <Card/></div>
-                    <div><Card/>
-                        <Card/></div>
-                    <div><Card/>
+                    <div className=''><Card/>
                         <Card/></div>
                 </SwiperSlide>
                 <SwiperSlide className="flex">
 
-                    <div className="m-5"><Card/>
+                    <div className="m-2"><Card/>
                         <Card/></div>
                     <div><Card/>
                         <Card/></div>
