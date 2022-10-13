@@ -10,7 +10,7 @@ export const NavBarLinks = [
         'to': '/About',
     },
     {
-        'id': 1,
+        'id': 3,
         'link': 'Contact Us',
         'to': '/Contact',
     },
