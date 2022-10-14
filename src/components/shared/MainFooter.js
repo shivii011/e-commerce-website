@@ -5,7 +5,7 @@ function MainFooter() {
   return (
   <div>
       <div><Footer className="invisible"/></div>
-    <div><Footer2 className="invisible"/></div>
+    <div><Footer2 className="invisible"y/></div>
   </div>
   )
 }
