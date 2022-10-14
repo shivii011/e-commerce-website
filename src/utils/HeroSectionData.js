@@ -1,11 +1,11 @@
 // importing images from assets
-import Laptop from '../assets/laptop-white.jpg'
-import Mobile from '../assets/mobile-samsung.jpg'
-import Headphone from '../assets/headphones.jpg'
-import Tablet from '../assets/tablet.jpg'
-import Watch from '../assets/smart-watch2.jpg'
-import Main from '../assets/main-img.jpg'
-import Camera from '../assets/cam.jpg'
+import Laptop from '../assets/images/laptop-white.jpg'
+import Mobile from '../assets/images/mobile-samsung.jpg'
+import Headphone from '../assets/images/headphones.jpg'
+import Tablet from '../assets/images/tablet.jpg'
+import Watch from '../assets/images/smart-watch2.jpg'
+import Main from '../assets/images/main-img.jpg'
+import Camera from '../assets/images/cam.jpg'
 
 export const HeroSectionData = [
     {
