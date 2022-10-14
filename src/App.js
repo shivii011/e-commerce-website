@@ -1,12 +1,11 @@
 import './App.css';
-import NavBar from './components/NavBar';
+
 import NavigationSection from './components/NavigationSection';
 import Footer from './components/shared/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
+    <div>
      E commerce
      <NavigationSection/>
      <Footer/>
@@ -14,4 +13,5 @@ function App() {
   )
 }
 
-export default App;
+export default App
+
