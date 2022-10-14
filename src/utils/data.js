@@ -11,6 +11,33 @@ import img from './../assets/mob-image.jpg';
         'ItemName':'Iphone-13',
         'Price':'$200',
         'image':img
-    }
+    },
+    {
+        'ItemType':'Smart Phone',
+        'ItemName':'Iphone-13',
+        'Price':'$200',
+        'image':img
+    },
+    {
+        'ItemType':'Smart Phone',
+        'ItemName':'Iphone-13',
+        'Price':'$200',
+        'image':img
+    },
+    {
+        'ItemType':'Smart Phone',
+        'ItemName':'Iphone-13',
+        'Price':'$200',
+        'image':img
+    },
+    {
+        'ItemType':'Smart Phone',
+        'ItemName':'Iphone-13',
+        'Price':'$200',
+        'image':img
+    },
+    
+    
+
    
 ]
