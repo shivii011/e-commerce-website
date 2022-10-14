@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './shared/Button'
-import "@fontsource/roboto";
+
 import {FaCheck} from 'react-icons/fa';
 const ArrayLogin = [
     {
