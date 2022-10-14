@@ -1,8 +1,8 @@
 import React from 'react'
 import {FooterSectionDataIcons2} from '../../utils/FooterSectionData'
-function Footer2( className) {
+function Footer2({Name}) {
   return (
-    <div className={`text-center justify-center lg:invisible ${className}`}>
+    <div className={`text-center justify-center ${Name}`}>
          <div className='flex px-10   justify-center'>
                         {
                         FooterSectionDataIcons2.map((data) => (
