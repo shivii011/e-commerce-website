@@ -1,12 +1,13 @@
 import './App.css';
-import NavBar from './components/NavBar';
-import Footer from './components/shared/Footer';
 
+import Footer from './components/shared/Footer';
+import TopBrands from './components/shared/TopBrands';
 function App() {
   return (
     <div className="App">
-      <NavBar />
+     
      E commerce
+     <TopBrands/>
      <Footer/>
     </div>
   )
