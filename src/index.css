@@ -1,3 +1,16 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@font-face {
+    font-family: "main";
+    src: url("/src/assets/ocrf-regular.ttf");
+}
+@font-face {
+    font-family: "special";
+    src: url("/src/assets/amita-regular.ttf");
+}
+@font-face {
+    font-family: "main-bold";
+    src: url("/src//assets/OCRF-Bold.ttf");
+}

@@ -26,19 +26,19 @@ const Contact = () => {
     }
     
     return (
-        <div className="bg-black h-screen">
-            <div className="text-center">
-                <div className="absolute inset-x-0 text-white font-bold tracking-wider opacity-30 gf:text-5xl xs:text-6xl md:text-9xl md:tracking-normal">CONTACT</div>
-                <div className="relative inset-y-4 text-2xl text-gold-web-golden font-bold gf:inset-y-3 gf:text-xl xs:inset-y-4 xs:text-2xl md:inset-y-12 md:text-5xl">GET IN TOUCH</div>
+        <div>
+            <div className="text-center bg-gradient-to-r from-green to-blue h-48 pt-12">
+                <div className="absolute inset-x-0 text-white font-bold tracking-wider opacity-60 text-6xl md:text-9xl md:tracking-normal">CONTACT</div>
+                <div className="relative inset-y-4 text-2xl text-blue font-extrabold  md:text-5xl">GET IN TOUCH</div>
             </div>
 
             <div className="lg:flex lg:justify-evenly lg:gap-64 md:my-16 px-2 md:px-12">
                 <div className="my-12 text-center lg:flex-col lg:w-2/5">
                     <div className="lg:text-left">
-                        <div className="text-lg text-white font-bold md:text-2xl">
+                        <div className="text-lg text-blue font-bold md:text-2xl">
                             FOR QUERIES
                         </div>
-                        <p className="text-white my-4">
+                        <p className="text-blue my-4">
                             Want to get in touch? We would love to hear from you. Drop an email or directly talk to a member of our sales team.
                         </p>
                     </div>
