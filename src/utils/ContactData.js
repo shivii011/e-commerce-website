@@ -2,7 +2,7 @@ import { FaEnvelope } from "react-icons/fa"
 import { FaPhoneAlt } from "react-icons/fa"
 
 // Assigning icon style
-const faIconsStyle = "text-gold-web-golden m-auto gf:w-8 gf:h-8 sm:w-12 sm:h-12"
+const faIconsStyle = "mx-auto w-12 h-12 lg:mx-0"
 
 export const ContactIcons = [
     {
@@ -25,6 +25,7 @@ export const FormFields = [
         'id': 301,
         'type': 'input',
         'name': 'name',
+        'label': 'Name',
         //'value': details.name,
         'placeholder': 'Enter your name',
     },
@@ -32,6 +33,7 @@ export const FormFields = [
         'id': 302,
         'type': 'input',
         'name': 'email',
+        'label': 'Email',
         //'value': details.email,
         'placeholder': 'Enter your email',
     },
@@ -39,6 +41,7 @@ export const FormFields = [
         'id': 303,
         'type': 'textarea',
         'name': 'message',
+        'label': 'Message',
         //'value': details.message,
         'placeholder': 'Enter your message',
     },
