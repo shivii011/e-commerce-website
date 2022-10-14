@@ -2,70 +2,43 @@ import React from 'react'
 import Button from './shared/Button'
 
 import {FaCheck} from 'react-icons/fa';
-const ArrayLogin = [
-    {
-        "label": "Username or email address*",
-        "type": "text"
-    }, {
-        "label": "Password*",
-        "type": "text"
-    }
-
-]
-const ArreyRagister = [
-    {
-        "label": "Username *",
-        "type": "text"
-    }, {
-        "label": "Email address *",
-        "type": "text"
-    }, {
-        "label": "Password *",
-        "type": "text"
-    },
-]
+import { ArrayLogin, ArrayRagister, benefits } from '../utils/LoginData';
 const LoginPage = () => {
     return (
-        <div className='m-5 lg:flex sm:block my-10 text-dark-grey '>
+        <div className='m-8 lg:flex sm:block my-10 font-main'>
             <div className='font-semibold text-left lg:w-1/2 md:w-6/7 sm:w-w'>
-                <h2 className='text-4xl font-normal'>Login</h2>
-                <hr className='text-gray my-4 w-5/6'/>
-                <p className='my-4 font-normal'>Welcome back! Sign in to your account
+                <h2 className='text-4xl font-normal text-white bg-blue w-5/6 p-2'>Login</h2>
+                <hr className='my-4 w-5/6'/>
+                <p className='my-4 font-normal text-green'>Welcome back! Sign in to your account
                 </p>
                 {
                 ArrayLogin.map((data) => (
                     <form className='my-[1rem]'>
-                        <label className="">
-                            {
-                            data.label
-                        }</label><br/>
-                        <input className=' border-2 border-gray rounded-xl w-5/6 h-10  text-lg px-2'
-                            type={
-                                data.type
-                            }/>
+                        <label className="">{data.label}</label><br/>
+                        <input className='border-2 rounded-xl w-5/6 h-10 text-lg px-2 my-2' type={data.type}/>
                     </form>
                 ))
             }
                 <form className='my-[1rem]'><input type='checkbox'/>
                     <label>Remember me</label>
                 </form>
-                <Button value="Log in" className=' border-2 rounded  hover:border-2 hover:text-white hover:bg-black py-2 px-4 text-lg'/>
-                <p className=' font-normal'>Lost your Password?</p>
+                <Button value="Log in" className='rounded bg-orange text-white hover:bg-blue py-2 px-4 text-lg mb-2'/>
+                <p className='font-normal text-red-500'>Lost your Password?</p>
 
             </div>
             <div className='text-left float-right font-semibold lg:w-1/2  lg:max-w-[40rem] md:w-6/7 sm:w-w '>
-                <h2 className='text-4xl font-normal'>Register</h2>
-                <hr className='text-gray my-4 max-w-[40rem]'/>
-                <p className='my-[1rem] font-normal'>
+                <h2 className='text-4xl font-normal p-2'>Register</h2>
+                <hr className='my-4 max-w-[40rem]'/>
+                <p className='my-[1rem] font-normal text-green'>
                     Create new account today to reap the benefits of personalized shopping experience.</p>
                 {
-                ArreyRagister.map((data) => (
+                ArrayRagister.map((data) => (
                     <form className='my-[1rem]'>
                         <label className="my-10">
                             {
                             data.label
                         }</label><br/>
-                        <input className=' border-2 border-gray rounded-xl w-5/6 h-10 text-lg px-2'
+                        <input className=' border-2 rounded-xl w-5/6 h-10 text-lg px-2 my-2'
                             type={
                                 data.type
                             }/>
@@ -73,18 +46,15 @@ const LoginPage = () => {
                 ))
             }
                 <p className='my-[1rem] font-normal w-6/7'>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</p>
-                <Button value="Register" className=' border-2 rounded  hover:border-2 hover:text-white hover:bg-black py-2 px-4 text-lg'/>
+                <Button value="Register" className="rounded border-2 hover:text-white hover:bg-black py-2 px-4 text-lg"/>
 
-                <div className='p-2'>
-                    <div className='flex'>
-                        <FaCheck className='text-green '/><p className='pl-3'>Speed your way through checkout</p>
-                    </div>
-                    <div className='flex'>
-                        <FaCheck className='text-green '/><p className='pl-3'>Track your orders easily</p>
-                    </div>
-                    <div className='flex'>
-                        <FaCheck className='text-green '/><p className='pl-3'>Keep a record of all your purchases</p>
-                    </div>
+                <div className='p-2 my-4'>
+                    {benefits.map((data) => (
+                        <div key={data.id} className='flex'>
+                            <FaCheck className='text-green '/><p className='pl-3'>{data.text}</p>
+                        </div>
+                    ))}
+                    
                 </div>
             </div>
         </div>

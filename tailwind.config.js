@@ -2,15 +2,18 @@
 module.exports = {
   content: [  "./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
-    colors: {
-      "yellow":"#fff835",
-      'purple':'#6600A5',
-      'russian-violet':'#2D0F51',
-      'white':'#fff',
-      'black':"#000000",
-      'gray':"#C5C5C5",
-      "dark-grey":"#333e48",
-      "green":"#367E18"
+    extend: {
+      colors: {
+        'blue': '#002855',
+        'green': '#00B2A9',
+        'gray': '#E65758',
+        'orange': '#DA291C',
+      },
+      fontFamily: {
+        main: ["main"],
+        special: ["special"],
+        mainBold: ["main-bold"],
+      },
     },
   },
   plugins: [],
