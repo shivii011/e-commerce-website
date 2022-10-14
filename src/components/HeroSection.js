@@ -17,7 +17,7 @@ import { Pagination, Navigation } from "swiper";
 
 const HeroSection = () => {
     // Creating variables for styling mapped data
-    const headingStyle = "text-gold-web-golden font-extrabold text-3xl ml-8"
+    const headingStyle = "text-gold-web-golden font-extrabold text-3xl ml-8 pt-2"
     const descStyle = "text-yellow-50 font-light text-sm py-4 pl-8 pr-10"
     const btnStyle = "flex ml-8 bg-gold-web-golden w-32 px-2 py-1.5 justify-center text-dark-charcoal font-bold hover:text-gold-web-golden hover:bg-dark-charcoal cursor-pointer"
 
@@ -37,9 +37,9 @@ const HeroSection = () => {
         >
             {/* Mapping data fetched from the object to omit repeated code */}
             {HeroSectionData.map((data) => (
-            <SwiperSlide className="flex" key={data.id}>
-                <img src={data.img} alt="" className="w-1/2" />
-                <div className="m-auto">
+            <SwiperSlide className="block sm:flex" key={data.id}>
+                <img src={data.img} alt="" className="sm:w-1/2" />
+                <div className="m-auto pb-2">
                     <div className={headingStyle}>{data.heading}</div>
                     <div className={descStyle}> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum vel et qui modi ad porro amet officia reprehenderit aut consectetur, itaque praesentium velit ut animi incidunt dolorem nisi iste veritatis. </div>
                     <div className={btnStyle}>
