@@ -8,7 +8,7 @@ function TopBrands() {
         <div>
             Top Brands
             <div className='flex justify-between p-10 opacity-60'>
-            {TopBrandsData.map((data)=>(<div className=''><img className=" lg:w-[10rem] md:w-[6rem] sm:w-[4rem]" src={data.image}/></div>))}
+            {TopBrandsData.map((data)=>(<div className=' align-middle'><img className="w-[4rem] lg:w-[10rem] md:w-[6rem] sm:w-[4rem] align-middle" src={data.image}/></div>))}
             </div>
         </div>
     </div>
