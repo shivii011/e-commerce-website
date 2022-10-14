@@ -1,11 +1,11 @@
-import AboutUs from "./pages/AboutUs";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-		<AboutUs />
+    <div>
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
