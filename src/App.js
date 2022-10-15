@@ -1,11 +1,11 @@
-import './App.css';
+import HeroSection from './components/HeroSection.js'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-     E commerce
+    <div>
+      <HeroSection/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
