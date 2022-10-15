@@ -1,17 +1,17 @@
 import React from 'react';
-
 import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css/pagination";
 import {Pagination} from "swiper";
-import Card from './shared/Card'
+import WishlistCard from './shared/WishlistCard';
 import 'antd/dist/antd.css';
 import { Tabs } from 'antd';
+import './NavigationSection.css'
 
 function NavigationSection() {
   return (
-  <div className=' text-center'>
- <Tabs  defaultActiveKey="1">
-    <Tabs.TabPane tab="Tab 1" key="1">
+  <div className='text-center'>
+ <Tabs  defaultActiveKey="1" tabsBarStyle={{justify:"center", color:"#000000"}}>
+    <Tabs.TabPane tab="Best Seller" key="1">
     <Swiper slidesPerView={1}
                 centeredSlides={true}
                 spaceBetween={30}
@@ -25,11 +25,11 @@ function NavigationSection() {
                 className="m-10"
             >
                 <SwiperSlide>
-                    <Card />
+                <WishlistCard /> 
                 </SwiperSlide>
             </Swiper>
     </Tabs.TabPane>
-    <Tabs.TabPane tab="Tab 2" key="2">
+    <Tabs.TabPane tab="Tranding Products" key="2">
     <Swiper slidesPerView={1}
                 centeredSlides={true}
                 spaceBetween={30}
@@ -43,11 +43,11 @@ function NavigationSection() {
                 className="m-10"
             >
                 <SwiperSlide>
-                    <Card />
+                <WishlistCard /> 
                 </SwiperSlide>
             </Swiper>
     </Tabs.TabPane>
-    <Tabs.TabPane tab="Tab 3" key="3">
+    <Tabs.TabPane tab="Special Offers" key="3">
     <Swiper slidesPerView={1}
                 centeredSlides={true}
                 spaceBetween={30}
@@ -61,7 +61,7 @@ function NavigationSection() {
                 className="m-10"
             >
                 <SwiperSlide>
-                    <Card />
+                <WishlistCard />
                 </SwiperSlide>
             </Swiper>
     </Tabs.TabPane>

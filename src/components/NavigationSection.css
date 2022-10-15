@@ -1,0 +1,11 @@
+.ant-tabs-nav-list {
+    align-items: center; 
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .ant-tabs-tab {
+    width: 20%;
+    justify-content: center;
+    font-size: medium;
+  }
