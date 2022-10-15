@@ -1,4 +1,3 @@
-import './App.css';
 import Newslatter from './components/Newslatter';
 
 function App() {
