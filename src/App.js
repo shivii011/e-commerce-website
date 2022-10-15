@@ -5,7 +5,7 @@ import Contact from './pages/Contact'
 import Layout from './components/shared/Layout'
 import PaymentPage from './components/PaymentPage'
 import LoginPage from './components/LoginPage'
-import WishList from './components/'
+import WishList from './components/Wishlist'
 
 const App = () => {
   return (
@@ -16,6 +16,9 @@ const App = () => {
 					<Route path="/" element={<Home />} ></Route>
 					<Route path="/AboutUs" element={<AboutUs />} ></Route>
 					<Route path="/Contact" element={<Contact />} ></Route>
+					<Route path="/PaymentPage" element={<PaymentPage />} ></Route>
+					<Route path="/LoginPage" element={<LoginPage />} ></Route>
+					<Route path="/WishList" element={<WishList />} ></Route>
 				</Routes>
       		</Layout>
     	</Router>

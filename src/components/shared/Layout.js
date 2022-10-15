@@ -5,7 +5,7 @@ import NewsLetter from '../Newslatter'
 
 const Layout = ({ children }) => {
     return (
-      <div className='bg-white'>
+      <div className>
           <NavBar />
           <main>{children}</main>
           <NewsLetter />

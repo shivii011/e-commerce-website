@@ -73,9 +73,11 @@ export const NavBarIcons = [
     {
         'id': 2,
         'icon': <FaShoppingCart className={iconStyle} />,
+        'to': '/PaymentPage',
     },
     {
         'id': 3,
         'icon': <FaHeart className={iconStyle} />,
+        'to': '/WishList',
     },
 ]

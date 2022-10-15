@@ -30,7 +30,7 @@ const Contact = () => {
         <div>
             <div className="text-center bg-gradient-to-r from-green to-blue h-48 pt-12 sm:pt-8">
                 <div className="absolute inset-x-0 text-white font-bold tracking-wider opacity-60 text-6xl md:text-9xl sm:text-7xl">CONTACT</div>
-                <div className="relative inset-y-4 text-2xl text-blue font-extrabold md:text-5xl md:inset-y-12 sm:text-3xl sm:inset-y-6 ">GET IN TOUCH</div>
+                <div className="relative inset-y-4 text-2xl text-blue font-extrabold md:text-5xl md:inset-y-10 sm:text-3xl sm:inset-y-6 ">GET IN TOUCH</div>
             </div>
 
             <div className="my-16 mx-8 text-center">

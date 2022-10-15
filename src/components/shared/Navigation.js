@@ -19,8 +19,10 @@ const Navigation = ({ className }) => {
             </div>
             <div className="flex py-1.5 gap-8 lg:py-4 xl:py-1.5">
                 {NavBarIcons.map((icon) => (
-                    <div key={icon.id}>
-                        {icon.icon}
+                    <div>
+                        <Link to={icon.to} key={icon.id}>
+                            {icon.icon}
+                        </Link>
                     </div>
                 ))}
             </div>      

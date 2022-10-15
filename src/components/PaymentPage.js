@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './shared/Button'
-import img from '../assets/pavalion.png'
+import img from '../assets/Pavalion.png'
 function PaymentPage() {
     return (
         <div className='payment p-5'>
