@@ -1,13 +1,8 @@
-import './App.css';
-import MainFooter from './components/shared/MainFooter'
-import Footer2 from './components/shared/Footer2'
-
+import AboutUs from "./pages/AboutUs"
 const App = () => {
   return (
-    <div className="App">
-     E commerce
-      <MainFooter/>
-
+    <div>
+      <AboutUs />
     </div>
   )
 }

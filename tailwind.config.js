@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
 
+const defaultTheme = require('tailwindcss/defaultTheme');
+
+module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
@@ -9,14 +11,17 @@ module.exports = {
       colors: {
         'blue': '#002855',
         'green': '#00B2A9',
-        'gray': '#E6E7E8',
+        'gray': '#E65758',
         'orange': '#DA291C',
+      },
+      backgroundImage: {
+        'gray-bg': "url('/src/assets/gray-bg.jpg')",
       },
       fontFamily: {
         main: ["main"],
         special: ["special"],
         mainBold: ["main-bold"],
-      },
+      }
     },
   },
   plugins: [],
