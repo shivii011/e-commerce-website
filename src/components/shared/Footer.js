@@ -5,7 +5,7 @@ import {FooterSectionDataNavigation} from '../../utils/FooterSectionData'
 import {FooterSectionDataCustomer} from '../../utils/FooterSectionData'
 const Footer = ({ className }) => {
     return (
-        <div className={`${className}`}>
+        <div className={`${Name}`}>
             
             <div className='footer bg-blue text-white grid grid-cols-7 p-5 font-main'>
                 <div className='contianer-1 col-span-3 ml-5'>
