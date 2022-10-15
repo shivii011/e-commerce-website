@@ -1,11 +1,13 @@
-import './App.css';
+import NavBar from "./components/shared/NavBar"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-     E commerce
+    <div>
+      <NavBar />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
+
