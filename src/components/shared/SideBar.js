@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { SideBarData } from '../../utils/NavData'
+import {Link} from 'react-router-dom'
 
 const SideBar = ( {className} ) => {
   const [isActive, setIsActive] = useState(false)
@@ -21,10 +22,12 @@ const SideBar = ( {className} ) => {
         </div>   
 		<div style={{display: isActive ? 'block':'none'}} className="h-screen bg-orange text-white text-xl font-bold font-main text-right">
 			{SideBarData.map((link) => (
-				<Link to={link.to} key={link.id} className="px-8 py-4 h-16 hover:bg-blue border-b-2">
-					{link.link}
-					
-				</Link>
+        <div className="px-8 py-4 h-16 hover:bg-blue border-b-2">
+          <Link to={link.to} key={link.id} onClick={handleClick}>
+					  {link.link}
+				  </Link>
+        </div>
+				
 			))}
 
         </div> 

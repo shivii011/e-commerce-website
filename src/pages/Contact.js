@@ -6,7 +6,7 @@ import img from '../assets/contact.png'
 
 
 const Contact = () => {
-    const fieldStyle = "my-8 px-2 py-1 bg-transparent border-blue border-b-2 sm:w-5/12 text-blue block mx-auto focus:border-orange focus:border-2 font:main font-medium mr-96"
+    const fieldStyle = "my-8 px-2 py-1 bg-transparent border-blue border-b-2 sm:w-5/12 text-blue block mx-auto focus:border-orange focus:border-2 font:main font-medium lg:mr-96"
     const btnStyle = "bg-orange border-none text-white font-bold rounded-2xl my-6 px-8 py-2 hover:bg-blue"
 
     // Initialing state variable with key names and empty value in order to update them on change
@@ -60,7 +60,7 @@ const Contact = () => {
                         </div>
                     </div>  
                 </div>
-                <form className="mt-20 text-center flex-col" onSubmit={onSubmit}>
+                <form className="mt-20 text-center justify-center" onSubmit={onSubmit}>
                     {/* Mapping Form Fields */}
                     {/* Bug */}
                     {FormFields.map((fields) => (

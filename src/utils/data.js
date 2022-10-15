@@ -1,4 +1,4 @@
-import img from './../assets/mob-image.jpg';
+import img from '../assets/mob-img.jpeg';
  export const Data = [
     {
         'ItemType':'Smart Phone',

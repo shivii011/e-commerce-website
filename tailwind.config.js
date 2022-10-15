@@ -19,6 +19,9 @@ module.exports = {
         special: ["special"],
         mainBold: ["main-bold"],
       },
+      backgroundImage: {
+        'hero': "url('/src/assets/images/gray-bg.jpg')",
+      },
     },
   },
   plugins: [],

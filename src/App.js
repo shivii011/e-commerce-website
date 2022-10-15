@@ -1,8 +1,11 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Home from './pages/Home'
-import About from './pages/AboutUs'
+import AboutUs from './pages/AboutUs'
 import Contact from './pages/Contact'
-import Layout from './components/Layout'
+import Layout from './components/shared/Layout'
+import PaymentPage from './components/PaymentPage'
+import LoginPage from './components/LoginPage'
+import WishList from './components/'
 
 const App = () => {
   return (
@@ -11,7 +14,7 @@ const App = () => {
 			<Layout>
 				<Routes>
 					<Route path="/" element={<Home />} ></Route>
-					<Route path="/About" element={<About />} ></Route>
+					<Route path="/AboutUs" element={<AboutUs />} ></Route>
 					<Route path="/Contact" element={<Contact />} ></Route>
 				</Routes>
       		</Layout>

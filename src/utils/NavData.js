@@ -29,14 +29,17 @@ export const SideBarData = [
     {
         'id': 6,
         'link': 'Wishlist',
+        'to': '/Wishlist',
     },
     {
         'id': 7,
         'link': 'Cart',
+        'to': '/PaymentPage',
     },
     {
         'id': 8,
         'link': 'Login / SignUp',
+        'to': '/LoginPage',
     },
 ]
 

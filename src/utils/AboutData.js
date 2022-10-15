@@ -1,4 +1,4 @@
-import img1 from '../assets/devices.jpg'
+import img1 from '../assets/images/devices.jpg'
 import img2 from '../assets/img.jpg'
 
 export const AboutData = [

@@ -1,17 +1,17 @@
 import React from 'react'
-import {FooterSectionDataIcons2} from '../../utils/FooterSectionData'
+import {FooterSectionDataIcons} from '../../utils/FooterSectionData'
 function Footer2( {className }) {
   return (
     <div className={`text-center font-main justify-center lg:invisible ${className}`}>
-         <div className='flex px-10  justify-center'>
+         <div className='flex px-10  justify-center bg-blue'>
                         {
-                        FooterSectionDataIcons2.map((data) => (
+                        FooterSectionDataIcons.map((data) => (
                             <div className='px-2 py-5 text-3xl'>
                                 <a href='#'
                                     className={
                                         `${
                                             data.icon
-                                        } text-gray-600`
+                                        } text-white`
                                     }/>
                             </div>
                         ))

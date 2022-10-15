@@ -1,4 +1,4 @@
-import MainImg from '../assets/about-main-img.jpg'
+import MainImg from '../assets/images/about-main-img.jpg'
 import { AboutData, imgData } from '../utils/AboutData'
 
 
@@ -6,7 +6,7 @@ import { AboutData, imgData } from '../utils/AboutData'
 const AboutUs = () => {
   return (
     <div>
-		<div className="bg-gray-bg h-32 flex justify-between md:h-64 lg:h-96">
+		<div className="bg-hero h-32 flex justify-between md:h-64 lg:h-96">
 			<span className="text-white text-3xl font-extrabold opacity-70 m-auto self-center md:text-6xl lg:text-8xl">About Us</span>
 			<img src={MainImg} alt="" className="h-32 float-right rounded-l-full md:h-64 lg:h-96"/>
 		</div>
@@ -25,7 +25,7 @@ const AboutUs = () => {
 					</p>
 				</div>
 			</div>
-		<div className="mx-8">
+		<div className="">
 			
 			<div>
 				<div className='bg-white text-center py-16 px-4'>
