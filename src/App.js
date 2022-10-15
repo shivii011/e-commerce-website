@@ -1,11 +1,11 @@
-import Contact from './pages/Contact.js'
+import HeroSection from './components/HeroSection.js'
+
 const App = () => {
   return (
     <div>
-      <Contact />
+      <HeroSection/>
     </div>
   )
 }
 
 export default App
-

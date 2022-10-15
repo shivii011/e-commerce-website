@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
 const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -21,8 +23,12 @@ module.exports = {
         main: ["main"],
         special: ["special"],
         mainBold: ["main-bold"],
-      }
+      },
+      backgroundImage: {
+        'hero': "url('/src/assets/images/gray-bg.jpg')",
+      },
     },
   },
   plugins: [],
 }
+  
