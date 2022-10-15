@@ -7,15 +7,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'dark-charcoal' : '#2F2F2F',
-        'russian-violet' : '#2D0F51',
-        'purple' : '#6600A5',
-        'electric-purple' : '#AF44F2',
-        'gold-web-golden' : '#FFD61E',
-        'maximum-yellow' : '#FFF835',
+        'blue': '#002855',
+        'green': '#00B2A9',
+        'gray': '#E6E7E8',
+        'orange': '#DA291C',
       },
       fontFamily: {
-      'roboto': ['Roboto', 'sans-serif'],
+        main: ["main"],
+        special: ["special"],
+        mainBold: ["main-bold"],
       },
     },
   },

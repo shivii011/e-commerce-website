@@ -6,8 +6,8 @@ const App = () => {
   return (
     <div className="App">
      E commerce
-   <MainFooter/>
-   <Footer2 />
+      <MainFooter/>
+
     </div>
   )
 }

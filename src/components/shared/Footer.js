@@ -3,17 +3,17 @@ import {FooterSectionDataIcons} from '../../utils/FooterSectionData'
 import {FooterSectionDataFind} from '../../utils/FooterSectionData'
 import {FooterSectionDataNavigation} from '../../utils/FooterSectionData'
 import {FooterSectionDataCustomer} from '../../utils/FooterSectionData'
-const Footer = ( className) => {
+const Footer = ({ className }) => {
     return (
         <div className={`${className}`}>
             
-            <div className='footer bg-gray-100 grid grid-cols-7 p-5'>
+            <div className='footer bg-blue text-white grid grid-cols-7 p-5 font-main'>
                 <div className='contianer-1 col-span-3 ml-5'>
                     <div className='text-4xl'>
                         LOGO</div>
 
                     <div className='grid grid-cols-3'>
-                        <div><i className='fa fa-headphones text-8xl  align-text-bottom text-yellow-300'/></div>
+                        <div><i className='fa fa-headphones text-8xl  align-text-bottom text-white'/></div>
                         <div>
                             <p>Got Questions ? call us 24/7!</p>
                             <p className='text-xl'>888224546 ,(588446546)</p>
@@ -79,7 +79,7 @@ const Footer = ( className) => {
                     } </div>
                 </div>
             </div>
-            <div className='reserved  bg-gray-200 p-2 '>
+            <div className='reserved text-white bg-gradient-to-r from-green to-blue p-2 '>
                 <div className='text-center'>
                     <i className="fa fa-copyright"></i>
                     <strong>Name</strong>-All Rights Reserved</div>
