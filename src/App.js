@@ -1,13 +1,16 @@
-import NavBar from "./components/shared/NavBar"
+import './App.css';
+import MainFooter from './components/shared/MainFooter'
+import Footer2 from './components/shared/Footer2'
 
 const App = () => {
   return (
-    <div>
-      <NavBar />
+    <div className="App">
+     E commerce
+      <MainFooter/>
+
     </div>
   )
 }
 
 export default App
-
 
