@@ -1,10 +1,11 @@
 import './App.css';
-import Wishlist from './components/Wishlist'
+import Wishlist from './components/Wishlist';
 
 const App = () => {
   return (
     <div className="App">
-    <Wishlist/>
+     E commerce
+  <Wishlist/>
     </div>
   )
 }
