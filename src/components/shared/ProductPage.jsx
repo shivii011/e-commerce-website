@@ -15,7 +15,7 @@ import Button from './Button';
 
 function ProductPage() {
     return (
-        <div className='lg:flex md:flex sm:block text-dark-grey '>
+        <div className='lg:flex md:flex sm:block text-dark-grey pb-8 font-main'>
            
             <div className='imageDiv lg:w-1/2 relative pt-10'>
             {ProductPageData.map((data)=>(
@@ -44,7 +44,7 @@ function ProductPage() {
             ))}
                 
             </div>
-            <div className='lg:w-1/2 pl-4 lg:text-left md:text-left sm:text-center font-semibold'>
+            <div className='lg:w-1/2 pl-4 lg:text-left md:text-left sm:text-center font-semibold mx-8'>
                 <p className='pt-5'>Smartphone</p>
                 <p className='text-3xl pt-5 font-normal'>Iphone12</p>
                 <div className='flex py-5'>
@@ -65,7 +65,7 @@ function ProductPage() {
                     </div>
                     <div className='flex'>
                         <input type='text'/>
-                        <div className=''><Button className=' bg-gold-web-golden p-2 ml-2 rounded text-white hover:gold-web-golden hover:bg-black ' value="Add to Cart"/></div>
+                        <div className=''><Button className=' bg-orange p-2 ml-2 rounded text-white hover:bg-blue ' value="Add to Cart"/></div>
                     </div>
                 </div>
             </div>
