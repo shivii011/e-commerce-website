@@ -21,10 +21,10 @@ const SideBar = ( {className} ) => {
         </div>   
 		<div style={{display: isActive ? 'block':'none'}} className="h-screen bg-orange text-white text-xl font-bold font-main text-right">
 			{SideBarData.map((link) => (
-				<div key={link.id} className="px-8 py-4 h-16 hover:bg-blue border-b-2">
+				<Link to={link.to} key={link.id} className="px-8 py-4 h-16 hover:bg-blue border-b-2">
 					{link.link}
 					
-				</div>
+				</Link>
 			))}
 
         </div> 

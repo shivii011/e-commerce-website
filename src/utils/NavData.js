@@ -6,6 +6,7 @@ export const SideBarData = [
     {
         'id': 1,
         'link': 'Home',
+        'to': '/',
     },
     {
         'id': 2,
@@ -14,10 +15,12 @@ export const SideBarData = [
     {
         'id': 3,
         'link': 'About Us',
+        'to': '/AboutUs',
     },
     {
         'id': 4,
         'link': 'Contact Us',
+        'to': '/Contact'
     },
     {
         'id': 5,
@@ -41,6 +44,7 @@ export const NavBarLinks = [
     {
         'id': 1,
         'link': 'Home',
+        'to': '/',
     },
     {
         'id': 2,
@@ -49,10 +53,12 @@ export const NavBarLinks = [
     {
         'id': 3,
         'link': 'About Us',
+        'to': '/AboutUs',
     },
     {
         'id': 4,
         'link': 'Contact Us',
+        'to': '/Contact',
     },
 ]
 

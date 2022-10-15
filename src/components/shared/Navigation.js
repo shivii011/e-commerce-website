@@ -1,5 +1,6 @@
 import SearchBar from '../SearchBar'
 import { NavBarLinks, NavBarIcons } from '../../utils/NavData'
+import {Link} from 'react-router-dom'
 
 const Navigation = ({ className }) => {
   return (
@@ -10,7 +11,7 @@ const Navigation = ({ className }) => {
             </div>
             <div className=" text-base flex gap-4 py-1.5">
                 {NavBarLinks.map((link) => (
-                    <span key={link.id} className="cursor-pointer text-white px-2 hover:rounded-lg hover:bg-orange">{link.link}</span>
+                    <Link to={link.to} key={link.id} className="cursor-pointer text-white px-2 hover:rounded-lg hover:bg-orange">{link.link}</Link>
                 ))}
             </div>
             <div className="py-1 pl-12 lg:py-4 xl:py-1">
