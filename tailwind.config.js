@@ -7,25 +7,17 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    screens: {
-      'gf': '250px',
-      'xs': '370px',
-      ...defaultTheme.screens,
-    },
     extend: {
       colors: {
         'blue': '#002855',
         'green': '#00B2A9',
-        'gray': '#E65758',
+        'gray': '#E6E7E8',
         'orange': '#DA291C',
-      }, 
+      },
       fontFamily: {
         main: ["main"],
         special: ["special"],
         mainBold: ["main-bold"],
-      },
-      backgroundImage: {
-        'hero': "url('/src/assets/images/gray-bg.jpg')",
       },
     },
   },
