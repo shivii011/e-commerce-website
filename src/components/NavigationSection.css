@@ -8,4 +8,14 @@
     width: 20%;
     justify-content: center;
     font-size: medium;
+    color: #DA291C;
+    
   }
+  .ant-tabs-tab:hover {
+    width: 20%;
+    justify-content: center;
+    font-size: medium;
+    color: #00B2A9;
+    
+  }
+  

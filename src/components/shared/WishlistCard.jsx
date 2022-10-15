@@ -42,9 +42,9 @@ function WishlistCard(className) {
                             </div>
 
                             <div className='flex text-center text-md sm:text-md lg:text-lg'>
-                                <div className='flex group'><FavouriteButton className='group-hover'/><p className=' px-1'>Wishlist</p></div>
+                                <div className='flex group'><FavouriteButton className='group-hover text-blue'/><p className=' px-1'>Wishlist</p></div>
                                 <div className='flex '>
-                                    <BuyButton/><p  className=' px-1 '>Cart</p></div>
+                                    <BuyButton className=' text-orange'/><p  className=' px-1 '>Cart</p></div>
                                
                             </div>
                         </div>

@@ -9,8 +9,8 @@ import './NavigationSection.css'
 
 function NavigationSection() {
   return (
-  <div className='text-center'>
- <Tabs  defaultActiveKey="1" tabsBarStyle={{justify:"center", color:"#000000"}}>
+  <div className='text-center font-main'>
+ <Tabs  defaultActiveKey="1" >
     <Tabs.TabPane tab="Best Seller" key="1">
     <Swiper slidesPerView={1}
                 centeredSlides={true}
