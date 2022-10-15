@@ -21,7 +21,7 @@ function PaymentPage() {
                     <p className='lg:text-md md:text-sm sm:text-xs'>Seller: IndiFlashMart</p>
                     <div className='flex lg:text-2xl md:text-xl sm:text-lg'>
                         <s className='pr-2'> ₹63,539</s> ₹56,990
-                        <p className=' text-green-600 lg:text-lg sm:text-xs pl-2'>10% Off</p>
+                        <p className=' text-green lg:text-lg sm:text-xs pl-2'>10% Off</p>
                     </div>
                     <div className='flex'>
                         <input type='number'min='0' className='w-[3rem] text-black border-2 border-black rounded' />
@@ -36,7 +36,7 @@ function PaymentPage() {
                       
                         <p>Delivery by Sun Oct 16 |
                         </p>
-                        <div className='flex text-green-600'>
+                        <div className='flex text-green'>
                             <p>Free</p>
                             <s>₹40</s>
                         </div>
@@ -47,8 +47,8 @@ function PaymentPage() {
                     <p className='font-semibold sm:text-lg md:text-xl lg:text-2xl'>PRICE DETAILS</p>
                     <hr/>
                     <div className='flex justify-between pt-2'><p>Price (1 item)</p><p> ₹63,539</p></div>
-                    <div className='flex justify-between pt-2'><p>Discounted Price</p><p className='text-green-600'>-₹6,549</p></div>
-                    <div className='flex justify-between py-2'><p>Delivery Charges</p><p className='text-green-600'>FREE</p></div>
+                    <div className='flex justify-between pt-2'><p>Discounted Price</p><p className='text-green'>-₹6,549</p></div>
+                    <div className='flex justify-between py-2'><p>Delivery Charges</p><p className='text-green'>FREE</p></div>
                     <hr/>
                     <div className='flex justify-between pt-2 font-semibold sm:text-lg md:text-xl lg:text-2xl'><p>Total Amount</p><p>₹56,990</p></div >
                  <div className='text-center'>   <Button value="Place Order" className=" bg-orange text-white border-2 rounded hover:border-2  hover:bg-blue py-2 px-4 text-lg "/></div>
