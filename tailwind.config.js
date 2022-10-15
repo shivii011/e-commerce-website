@@ -13,16 +13,17 @@ module.exports = {
         'green': '#00B2A9',
         'gray': '#E65758',
         'orange': '#DA291C',
-      },
-      backgroundImage: {
-        'gray-bg': "url('/src/assets/gray-bg.jpg')",
-      },
+      }, 
       fontFamily: {
         main: ["main"],
         special: ["special"],
         mainBold: ["main-bold"],
-      }
+      },
+      backgroundImage: {
+        'hero': "url('/src/assets/images/gray-bg.jpg')",
+      },
     },
   },
   plugins: [],
 }
+  
