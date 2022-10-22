@@ -20,9 +20,9 @@ const SideBar = ( {className} ) => {
             </div>
             
         </div>   
-		<div style={{display: isActive ? 'block':'none'}} className="h-screen bg-orange text-white text-xl font-bold font-main text-right">
+		<div style={{display: isActive ? 'block':'none'}} className="bg-white text-black text-center text-xl font-bold font-main">
 			{SideBarData.map((link) => (
-        <div className="px-8 py-4 h-16 hover:bg-blue border-b-2">
+        <div className="px-8 py-4 h-16 hover:bg-gray border-b-2 border-gray">
           <Link to={link.to} key={link.id} onClick={handleClick}>
 					  {link.link}
 				  </Link>

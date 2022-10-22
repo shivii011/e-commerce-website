@@ -1,5 +1,5 @@
 import img from '../assets/mob-img.jpeg';
-import pavalion from './../assets/Pavalion.png'
+import pavalion from './../assets/pavalion.png'
 
  export const Data = [
     {

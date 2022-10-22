@@ -38,8 +38,11 @@ const HeroSection = () => {
             {/* Mapping data fetched from the object to omit repeated code */}
             {HeroSectionData.map((data) => (
             <SwiperSlide className="block sm:flex" key={data.id}>
-                <img src={data.img} alt="" className="sm:w-1/2" />
-                <div className="m-auto pb-2">
+              {/* <div className='w-2/3'> */}
+              <img src={data.img} alt="" className="sm:w-1/2" />
+              {/* </div> */}
+                
+                <div className="my-auto pb-2 ">
                     <div className={headingStyle}>{data.heading}</div>
                     <div className={descStyle}> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum vel et qui modi ad porro amet officia reprehenderit aut consectetur, itaque praesentium velit ut animi incidunt dolorem nisi iste veritatis. </div>
                     <div className={btnStyle}>
