@@ -1,9 +1,10 @@
 import HeroSection from './components/HeroSection.js'
+import Contact from './pages/Contact.js'
 
 const App = () => {
   return (
     <div>
-      <HeroSection/>
+      < Contact/>
     </div>
   )
 }

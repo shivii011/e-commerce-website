@@ -6,7 +6,7 @@ import img from '../assets/contact.png'
 
 
 const Contact = () => {
-    const fieldStyle = "my-8 px-2 py-1 bg-transparent border-blue border-b-2 sm:w-5/12 text-blue block mx-auto focus:border-orange focus:border-2 font:main font-medium mr-96"
+    const fieldStyle = "my-8 px-2 py-1 bg-transparent border-blue border-b-2 sm:w-5/12 text-blue focus:border-orange focus:border-2 font:main font-medium lg:w-64"
     const btnStyle = "bg-orange border-none text-white font-bold rounded-2xl my-6 px-8 py-2 hover:bg-blue"
 
     // Initialing state variable with key names and empty value in order to update them on change
@@ -35,43 +35,45 @@ const Contact = () => {
 
             <div className="my-16 mx-8 text-center">
                 <div>
-                    <div className="lg:flex flex-row-reverse lg:gap-8">
-                        <img src={img} alt="" className="lg:w-1/2 md:w-2/3 mx-auto" />
-                        <div className="lg:text-left lg:bg-gradient-to-r from-cyan-500 to-white lg:px-8" >
-                            <div className="my-12">
-                                <div className="text-2xl text-blue font-mainBold font-bold lg:my-12 md:text-2xl lg:text-4xl">
-                                    FOR QUERIES
-                                </div>
-                                <p className="text-lg text-blue font-main my-4 mx-auto lg:text-2xl md:w-[400px]">
-                                    Want to get in touch? We would love to hear from you. Drop an email or directly talk to a member of our sales team.
-                                </p>
-                            </div>
-                            
-                            <div className="lg:flex lg:gap-24">
-                                { ContactIcons.map((data) => (
-                                    <div className="text-blue font-main my-12" key={data.id}>
-                                        <div className="my-4">{data.icon}</div>
-                                        <div className="my-2">{data.title}</div>
-                                        <div>{data.content}</div>
+                    <div className="lg:flex flex-row-reverse lg:justify-between">
+                        <img src={img} alt="" className="lg:w-1/2 md:w-2/3" />
+                        <div className="lg:text-left lg:bg-gradient-to-r from-cyan-500 to-white lg:px-8 lg:w-96" >
+                            <form className="mt-20" onSubmit={onSubmit}>
+                                {/* Mapping Form Fields */}
+                                {/* Bug */}
+                                {FormFields.map((fields) => (
+                                    <div key={fields.id} className="" >
+                                        {/* <label className="hidden lg:block font-main text-blue text-lg w-1 ml-96">{fields.label}</label> */}
+                                        <input type={fields.type} name={fields.name} value={details.values} placeholder={fields.placeholder} className={fieldStyle} onChange={valueHandler}/>  
                                     </div>
-                                    ))
-                                }
-                            </div>
+                                ))}
+                                <Button value="Submit" className={btnStyle} />
+                            </form>
                         </div>
                     </div>  
-                </div>
-                <form className="mt-20 text-center flex-col" onSubmit={onSubmit}>
-                    {/* Mapping Form Fields */}
-                    {/* Bug */}
-                    {FormFields.map((fields) => (
-                        <div key={fields.id} className="flex" >
-                            <label className="hidden lg:block font-main text-blue text-lg w-1 ml-96">{fields.label}</label>
-                            <input type={fields.type} name={fields.name} value={details.values} placeholder={fields.placeholder} className={fieldStyle} onChange={valueHandler}/>  
+                    <div className="mt-8">
+                        <div className="my-12">
+                            <div className="text-2xl text-blue font-mainBold font-bold lg:my-12 md:text-2xl lg:text-4xl">
+                                        FOR QUERIES
+                            </div>
+                            <p className="text-lg text-blue font-main my-4 mx-auto lg:text-2xl md:w-[400px]">
+                                Want to get in touch? We would love to hear from you. Drop an email or directly talk to a member of our sales team.
+                            </p>
                         </div>
-                        
-                    ))}
-                    <Button value="Submit" className={btnStyle} />
-                </form>
+                                
+                        <div>
+                            { ContactIcons.map((data) => (
+                                <div className="text-blue font-main my-12" key={data.id}>
+                                    <div className="my-4">{data.icon}</div>
+                                    <div className="my-2">{data.title}</div>
+                                    <div>{data.content}</div>
+                                </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+                </div>
+                
             </div>
 
         </div>
