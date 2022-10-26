@@ -19,7 +19,7 @@ function WishlistCard( className) {
           
                 </div>
             </div>
-            <div className='flex justify-between w-[4rem] mt-16'>
+            <div className='flex justify-between w-[4rem] mt-[6rem]'>
              <BuyButton className='text-orange'/>
              <i class="fa fa-trash text-2xl text-red-500 active:animate-bounce cursor-pointer"></i>
                   </div>
