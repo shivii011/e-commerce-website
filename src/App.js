@@ -4,7 +4,6 @@ import NavigationSection from './components/NavigationSection';
 function App() {
   return (
     <div>
-     E commerce
      <NavigationSection/>
 
     </div>
