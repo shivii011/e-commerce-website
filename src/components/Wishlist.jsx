@@ -9,7 +9,7 @@ function Wishlist() {
         <hr className=' opacity-40'/>
    <div className='flex justify-center'>
    <WishlistCard/>
-        <WishlistCard/>
+      
    </div>
       </div>
   )

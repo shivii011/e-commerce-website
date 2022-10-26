@@ -4,6 +4,7 @@ import camera from './../assets/camera.png';
 import speakers from './../assets/speakers.png';
 import headphone from './../assets/headphone.png';
 import printer from './../assets/printer.png';
+import pavalion from './../assets/Pavalion.png'
  export const Data = [
  
     {
@@ -70,6 +71,9 @@ export const WishlistData = [
         'image':pavalion
     }
    
+    
 ]
+
+
 
 
