@@ -1,10 +1,10 @@
-import img from './../assets/mob-image.jpg';
+import img from './../assets/mob-img.jpeg';
 import monitor from './../assets/monitor.png';
 import camera from './../assets/camera.png';
 import speakers from './../assets/speakers.png';
 import headphone from './../assets/headphone.png';
 import printer from './../assets/printer.png';
-import pavalion from './../assets/Pavalion.png'
+import pavalion from './../assets/pavalion.png'
  export const Data = [
  
     {
