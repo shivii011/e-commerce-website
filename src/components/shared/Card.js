@@ -5,7 +5,7 @@ import { Data } from '../../utils/data';
 
 const Card = (className) => {
   return (
-    <div className='group font-main  justify-center grid grid-col sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4 xl:grid xl:grid-cols-6'>
+    <div className='group font-main  justify-center grid grid-col sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4 xl:grid xl:grid-cols-4 2xl:grid 2xl:grid-cols-6'>
       {Data.map((data) => (
           <div className={`max-w-[14rem] mx-2 my-1 border rounded  hover:shadow-xl transition-shadow ${className}`}>
                  <FavouriteButton className='m-2 absolute z-10 mx-[11rem] text-blue'/>
