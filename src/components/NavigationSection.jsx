@@ -2,7 +2,7 @@ import React from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css/pagination";
 import {Pagination} from "swiper";
-import WishlistCard from './shared/WishlistCard';
+import Card from './shared/Card';
 import 'antd/dist/antd.css';
 import { Tabs } from 'antd';
 import './NavigationSection.css'
@@ -25,7 +25,7 @@ function NavigationSection() {
                 className="m-10"
             >
                 <SwiperSlide>
-                <WishlistCard /> 
+                <Card /> 
                 </SwiperSlide>
             </Swiper>
     </Tabs.TabPane>
@@ -43,7 +43,7 @@ function NavigationSection() {
                 className="m-10"
             >
                 <SwiperSlide>
-                <WishlistCard /> 
+                <Card /> 
                 </SwiperSlide>
             </Swiper>
     </Tabs.TabPane>
@@ -61,7 +61,7 @@ function NavigationSection() {
                 className="m-10"
             >
                 <SwiperSlide>
-                <WishlistCard />
+                <Card />
                 </SwiperSlide>
             </Swiper>
     </Tabs.TabPane>
