@@ -1,15 +1,12 @@
-import './App.css';
-import NavBar from './components/NavBar';
-import Footer from './components/shared/Footer';
+import Card from "./components/shared/Card"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <NavBar />
-     E commerce
-     <Footer/>
+    <div>
+      <Card/>
     </div>
   )
 }
 
-export default App;
+export default App
+
