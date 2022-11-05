@@ -1,7 +1,8 @@
-import img from '../assets/mob-img.jpeg';
+// import img from '../assets/mob-img.jpeg';
 import pavalion from './../assets/pavalion.png'
+import img from './../assets/Apple-iPhone.png';
 
- export const Data = [
+ export const Data2 = [
     {
         'ItemType':'Smart Phone',
         'ItemName':'Iphone-13',
@@ -46,6 +47,16 @@ export const WishlistData = [
         'Price':'₹63,539',
         "DiscountedPrice":'₹56,990',
         'image':pavalion
+    }]
+ export const Data = [
+    {
+        'ItemType':'Smart Phone',
+        'ItemName':'Iphone-12',
+        'Price':'₹16990',
+        'Discounted':'₹14990',
+        'DiscountPercentage':'10% off',
+        'image':img,
+        'rating':'3.8'
     }
    
 ]
