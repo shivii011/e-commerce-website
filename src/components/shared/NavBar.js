@@ -4,7 +4,7 @@ import SideBar from "./SideBar";
 const NavBar = () => {
   return (
 	<div>
-		<Navigation className={"hidden lg:inline-block"} />
+		<Navigation className={"hidden lg:block"} />
 		<SideBar className={"block lg:hidden"} />
 	</div>
   )

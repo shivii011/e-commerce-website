@@ -1,76 +1,35 @@
 import React from 'react';
 import BuyButton from './BuyButton';
 import FavouriteButton from './FavouriteButton';
-import {Data} from '../../utils/data';
-import './Card.css'
-import { useEffect } from 'react'
-import { useState } from 'react'
-import axios from 'axios'
+import { Data } from '../../utils/data';
 
 const Card = (className) => {
-    const [products, setProducts] = useState([])
-    useEffect(() => {
-        axios.get(`https://dp-backend-e-comm.herokuapp.com/api/products`)
-        .then((res) => {
-            let { data } = res.data
-            let _data = data.slice(0,6)
-            setProducts(_data)
-        }) 
-        //fetchProducts()  
-    }, [])
-    // const fetchProducts = async () => {
-    //     let res = await axios.get(`https://dp-backend-e-comm.herokuapp.com/api/products?limit=6`)
-    //     let { data } = res.data
-    //     let _data = data.slice(0,6)
-    //     setProducts(_data)
-    // } 
-    console.log(products)
-    console.log("products")
-  
-    return (
-        <div className="sm:flex sm:flex-wrap">
-            {products.map((p) => (
-                <div className={`basis-1/3 hover:shadow-lg flex ${className}`}>
-                    <div className='w-2/5'>
-                        <img 
-                            className='hover:object-center hover:border-solid hover:border-2 group-hover:border-yellow-400 h-32'
-                            src={p.productImages[0].productImageUrl
-                            }
-                            alt=''
-                        />
-                    </div>
-                    <div className=' text-left m-2 pl-2 w-3/5'>
-                        {/* <p className='text-md md:text-sm text-dark-gray font-semibold '>
-                            {data.ItemType}
-                        </p> */}
-                        <p className='lg:text-2xl md:text-xl text-dark-gray font-semibold'>
-                            {p.productName}
-                        </p>
-                        <div className=''>
-                            <p className='lg:text-2xl md:text-xl text-dark-gray'>
-                                {p.discountedPrice}
-                            </p>
-                            <div className='lg:flex md:block'>
-                                <div className='flex'>
-                                    <FavouriteButton className='mx-2 md:text-xl'/>
-                                    <p className='text-gray hover:text-dark-gray md:text-sm sm:text-sm'>
-                                        Wishlist
-                                    </p>
-                                </div>
-                                <div className='flex'>
-                                    <BuyButton className='mx-2 md:text-xl'/>
-                                    <p className=' text-gray hover:text-dark-gray md:text-sm'>
-                                        Add To Cart
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  return (
+    <div className=' max-w-[14rem] my-[3rem] bg-gray rounded-xl font-main shadow-md hover:shadow-xl hover:transform duration-75 hover:scale-105 '>
+      {Data.map((data) => (
+          <div className={` transition-shadow ${className}`}>
+                <div className='absolute z-10 '> <FavouriteButton className='p-2 rounded-full w-10 h-10 mx-[10.86rem] mt-2 text-blue  border'/></div>
+            <div className=' max-w-[13] border-1 relative p-6'><img className='rounded-lg' src={data.image} alt='' /></div>
+            <div className='pl-3 pb-2'>
+              <p className='text-md text-zinc-500'>{data.ItemType}</p>
+              <p className='text-xl font-semibold py-1'>{data.ItemName}</p>
+              <div className='opacity-100 group-hover:opacity-100 flex '>
+                  <p className=' px-1 text-lg'>{data.Discounted}</p>
+                  <p className=' px-1 text-sm text-zinc-500 '><s>{data.Price}</s></p>
+                  {/* <p className=' px-1  text-xs text-green'>{data.DiscountPercentage}</p> */}
+                  
                 </div>
-                ))
-            }   
-        </div>
-    )
+                <div className='flex  px-1 '>
+                    <div className='bg-green rounded-lg flex p-1 cursor-pointer'><p className='text-white'>{data.rating}</p><i className="fa fa-star text-white text-xs pt-1"/> </div>
+                    <div className='bg-orange rounded-lg flex p-1 ml-8 cursor-pointer text-sm '><p className='text-white'>Add to cart</p></div>
+                    
+                  </div>
+            </div>
+          </div>
+      ))}
+    </div>
+  )
 }
 
 export default Card
+// <BuyButton className='mx-2 text-white' />

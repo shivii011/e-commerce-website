@@ -35,7 +35,7 @@ const AboutUs = () => {
 					<div className="font-mainBold text-blue text-xl sm:text-5xl pb-8">
 						ELECTRONIC COMPONENTS
 					</div>
-					<div className="sm:flex sm:gap-4">
+					<div className="sm:flex sm:gap-4 px-4">
 						{AboutData.map((data) => (
 							<div key={data.id} className="bg-green text-white px-2 my-4 sm:py-4 sm:shadow-2xl rounded-2xl">
 								<div className="font-mainBold py-2 sm:text-xl">

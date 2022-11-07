@@ -69,6 +69,7 @@ export const NavBarIcons = [
     {
         'id': 1,
         'icon': <FaUser className={iconStyle} />,
+        'to': '/LoginPage',
     },
     {
         'id': 2,
