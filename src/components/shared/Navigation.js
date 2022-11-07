@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 const Navigation = ({ className }) => {
   return (
     <div className={className}>
-      <div className="text-lg font-main font-bold text-white bg-gradient-to-r from-green to-blue h-14 px-8 py-2 flex gap-16 xl:w-[98.7vw] lg:h-20 xl:h-14">
+      <div className="text-lg font-main font-bold text-white bg-gradient-to-r from-green to-blue h-14 px-8 py-2 flex gap-16 lg:h-20 xl:h-14">
             <div className='py-1.5'>
                 <span className="underline">e</span>LECTRIC  <span className="underline">m</span>ART
             </div>
