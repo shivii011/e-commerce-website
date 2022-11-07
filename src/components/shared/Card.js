@@ -8,7 +8,7 @@ import { useState } from 'react'
 import axios from 'axios'
 
 const Card = (className) => {
-    const [products, setProducts] = useState(null)
+    const [products, setProducts] = useState([])
     useEffect(() => {
         axios.get(`https://dp-backend-e-comm.herokuapp.com/api/products`)
         .then((res) => {
@@ -25,6 +25,7 @@ const Card = (className) => {
     //     setProducts(_data)
     // } 
     console.log(products)
+    console.log("products")
   
     return (
         <div className="sm:flex sm:flex-wrap">
