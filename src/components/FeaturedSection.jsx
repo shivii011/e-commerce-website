@@ -9,9 +9,8 @@ import Card from './shared/Card'
 
 export default function FeaturedSection(Slides) {
     Slides = 1;
-
     return (
-        <div className=" h-[35rem]">
+        <div className="">
             <p className="text-center text-2xl font-semibold text-blue-500 ">Featured Section</p>
             <Swiper slidesPerView={1}
                 centeredSlides={true}
@@ -25,13 +24,9 @@ export default function FeaturedSection(Slides) {
                 } 
                 className="m-10"
             >
-                <SwiperSlide>
+                <SwiperSlide className="">
                     <Card />
                 </SwiperSlide>
-                <SwiperSlide>
-                    <Card />
-                </SwiperSlide>
-
             </Swiper>
         </div>
     );

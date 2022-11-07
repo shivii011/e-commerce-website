@@ -5,7 +5,7 @@ import { Data } from '../../utils/data';
 
 const Card = (className) => {
   return (
-    <div className=' max-w-[14rem] bg-gray rounded-xl font-main shadow-lg hover:shadow-2xl hover:transform duration-75 hover:scale-105 '>
+    <div className=' max-w-[14rem] mb-[3rem] bg-gray rounded-xl font-main shadow-md hover:shadow-xl hover:transform duration-75 hover:scale-105 '>
       {Data.map((data) => (
           <div className={` transition-shadow ${className}`}>
                 <div className='absolute z-10 '> <FavouriteButton className='p-2 rounded-full w-10 h-10 mx-[10.86rem] mt-2 text-blue  border'/></div>
