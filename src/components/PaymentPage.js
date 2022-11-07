@@ -9,7 +9,7 @@ function PaymentPage() {
                <p className='lg:text-2xl md:text-xl sm:text-lg font-semibold'>Address : </p>
                <input className='border-2 border-black h-8 rounded' type='text'/>
                </div>
-                <Button value="Pincode" className="bg-yellow-400 text-white border-2 rounded hover:border-2  hover:bg-black py-1 px-4 lg:text-lg sm:text:sm"/>
+                <Button value="Pincode" className="bg-orange text-white border-2 rounded hover:border-2  hover:bg-blue py-1 px-4 lg:text-lg sm:text:sm"/>
             </div>
             <div  className=' lg:grid lg:grid-cols-5  '>
                 <div className='left col-span-3 lg:grid lg:grid-cols-6 text-left '>
@@ -25,8 +25,8 @@ function PaymentPage() {
                     </div>
                     <div className='flex'>
                         <input type='number'min='0' className='w-[3rem] text-black border-2 border-black rounded' />
-                        <div className='flex text-gray-600 opacity-70'>
-                     <i class="fa fa-heart text-2xl text-yellow-400 mx-2" />
+                        <div className='flex text-gray-600'>
+                     <i class="fa fa-heart text-2xl text-blue mx-2" />
                         <i className="fa-sharp fa fa-trash text-red-700 text-2xl"/>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ function PaymentPage() {
                     <div className='flex justify-between py-2'><p>Delivery Charges</p><p className='text-green-600'>FREE</p></div>
                     <hr/>
                     <div className='flex justify-between pt-2 font-semibold sm:text-lg md:text-xl lg:text-2xl'><p>Total Amount</p><p>₹56,990</p></div >
-                 <div className='text-center'>   <Button value="Place Order" className="bg-yellow-400 text-white border-2 rounded hover:border-2  hover:bg-black py-2 px-4 text-lg "/></div>
+                 <div className='text-center'>   <Button value="Place Order" className="bg-orange text-white border-2 rounded hover:border-2  hover:bg-blue py-2 px-4 text-lg "/></div>
                 </div>
             </div>
         </div>

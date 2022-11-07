@@ -4,7 +4,7 @@ function FavouriteButton({className ,onClick=()=>{}})
  {
   return (
     <div>
-    <FaHeart onClick={onClick} className= {`${className} cursor-pointer text-2xl active:animate-bounce`}/>
+    <FaHeart onClick={onClick} className= {`${className} cursor-pointer text-2xl `}/>
     </div>
   )
 }

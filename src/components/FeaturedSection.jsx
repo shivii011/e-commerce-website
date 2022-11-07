@@ -11,7 +11,7 @@ export default function FeaturedSection(Slides) {
     Slides = 1;
 
     return (
-        <div className="">
+        <div className=" h-[35rem]">
             <p className="text-center text-2xl font-semibold text-blue-500 ">Featured Section</p>
             <Swiper slidesPerView={1}
                 centeredSlides={true}
