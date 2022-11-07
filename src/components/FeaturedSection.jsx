@@ -28,9 +28,9 @@ export default function FeaturedSection(Slides) {
                 <SwiperSlide>
                     <Card />
                 </SwiperSlide>
-                <SwiperSlide>
+                {/* <SwiperSlide>
                     <Card />
-                </SwiperSlide>
+                </SwiperSlide> */}
 
             </Swiper>
         </div>
