@@ -9,7 +9,7 @@ const Card = (className) => {
       {Data.map((data) => (
           <div className={` transition-shadow ${className}`}>
                 <div className='absolute z-10 '> <FavouriteButton className='p-2 rounded-full w-10 h-10 mx-[10.86rem] mt-2 text-blue  border'/></div>
-            <div className=' max-w-[13] border-1 relative m-3'><img className='rounded-lg' src={data.image} alt='' /></div>
+            <div className=' max-w-[13] border-1 relative p-6'><img className='rounded-lg' src={data.image} alt='' /></div>
             <div className='pl-3 pb-2'>
               <p className='text-md text-zinc-500'>{data.ItemType}</p>
               <p className='text-xl font-semibold py-1'>{data.ItemName}</p>
