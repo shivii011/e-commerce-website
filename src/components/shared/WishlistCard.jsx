@@ -3,9 +3,9 @@ import BuyButton from './BuyButton';
 import { WishlistData } from '../../utils/data';
 function WishlistCard( className) {
   return (
-    <div className='group  border-gray border-2 m-2'>
+    <div className='group   my-4'>
       {WishlistData.map((data) => (
-          <div className={`hover:shadow-2xl opacity-90 hover:opacity-100 transition-opacity ${className} flex`}>
+          <div className={`p-2 bg-gray  rounded-xl font-main shadow-md hover:shadow-xl hover:transform duration-75 hover:scale-105  ${className} flex`}>
             <div className='mt-16'><input className='m-2' type='checkbox' /></div>
             <div className='w-1/4 h-[10rem]'><img className='p-2 h-[10rem] ' src={data.image} alt='' /></div>
             <div className='w-1/2'>
@@ -21,7 +21,7 @@ function WishlistCard( className) {
             </div>
             <div className='flex justify-between w-[4rem] mt-[6rem]'>
              <BuyButton className='text-orange'/>
-             <i class="fa fa-trash text-2xl text-red-500 active:animate-bounce cursor-pointer"></i>
+             <i class="fa fa-trash text-2xl text-red-500  cursor-pointer"></i>
                   </div>
           </div>
       ))}
