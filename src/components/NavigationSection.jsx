@@ -3,7 +3,7 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css/pagination";
 import {Pagination} from "swiper";
 import Card from './shared/Card';
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.min.css'
 import { Tabs } from 'antd';
 import './NavigationSection.css'
 
