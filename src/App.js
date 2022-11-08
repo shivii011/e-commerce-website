@@ -6,6 +6,7 @@ import Layout from './components/shared/Layout'
 import PaymentPage from './components/PaymentPage'
 import LoginPage from './components/LoginPage'
 import WishList from './components/Wishlist'
+import ProductPage from './components/shared/ProductPage'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
 					<Route path="/PaymentPage" element={<PaymentPage />} ></Route>
 					<Route path="/LoginPage" element={<LoginPage />} ></Route>
 					<Route path="/WishList" element={<WishList />} ></Route>
+					<Route path="/ProductPage/:productId" element={<ProductPage />} ></Route>
 				</Routes>
       		</Layout>
     	</Router>

@@ -1,13 +1,20 @@
 import React from "react";
 import BuyButton from "./BuyButton";
 import FavouriteButton from "./FavouriteButton";
+import {Link} from 'react-router-dom'
+import { useState } from "react";
+import { useEffect } from "react";
 
 
 const Card = ({ className, products }) => {
+  
+  console.log(products)
+
+
   return (
-    <div className="my-4 rounded-xl font-main px-12 gap-8 flex flex-wrap justify-center">
+    <div className="my-4 rounded-xl font-main px-12 gap-8 flex flex-wrap justify-center cursor-pointer">
       {products.map((product) => (
-        <div
+        <Link to={`/ProductPage/${product.productId}`}
           className={` transition-shadow bg-gray hover:transform duration-75 hover:scale-105 w-80 shadow-md hover:shadow-xl  ${className}`}
         >
           <div className="flex justify-end">
@@ -38,7 +45,7 @@ const Card = ({ className, products }) => {
               </div>
             </div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );
