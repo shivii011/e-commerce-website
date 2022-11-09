@@ -2,7 +2,7 @@ import { FaEnvelope } from "react-icons/fa"
 import { FaPhoneAlt } from "react-icons/fa"
 
 // Assigning icon style
-const faIconsStyle = "mx-auto w-12 h-12 lg:mx-0"
+const faIconsStyle = "mx-auto w-12 h-12"
 
 export const ContactIcons = [
     {
