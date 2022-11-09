@@ -19,7 +19,7 @@ const LoginPage = () => {
                     </form>
                 ))
             }
-                <form className='my-[1rem]'><input type='checkbox'/>
+                <form className='my-[1rem]'><input type='checkbox' />
                     <label>Remember me</label>
                 </form>
                 <Button value="Log in" className='rounded bg-orange text-white hover:bg-blue py-2 px-4 text-lg mb-2'/>
