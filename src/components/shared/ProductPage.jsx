@@ -17,19 +17,17 @@ import {EffectFlip, Pagination, Navigation} from "swiper";
 import Button from './Button';
 
 function ProductPage() {
-    const [product, setProduct] = useState({})
+    const [product, setProduct] = useState([])
     //const [productImages, setProductImages] = useState([])
     let { productId } = useParams()
     useEffect(() => {
-        axios
-        .get(`https://dp-backend-e-comm.herokuapp.com/api/products/?productId=${productId}`)
-        .then((res) => {
-            console.log(res)
+        const getIndividualProduct = async () => {
+            let res = await axios.get(`https://dp-backend-e-comm.herokuapp.com/api/products?productId=${productId}`)
             let { data } = res.data
-            //let { productImages } = data.productImages
+            //let _data = data.slice(0, 6)
             setProduct(data)
-            //setProductImages(productImages)
-        })
+        }
+        getIndividualProduct()
     }, [])
 
     return (

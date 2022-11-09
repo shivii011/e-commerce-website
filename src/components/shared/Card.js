@@ -15,7 +15,7 @@ const Card = ({ className, products }) => {
     <div className="my-4 rounded-xl font-main px-12 gap-8 flex flex-wrap justify-center cursor-pointer">
       {products.map((product) => (
         <Link to={`/ProductPage/${product.productId}`}
-          className={` transition-shadow bg-gray hover:transform duration-75 hover:scale-105 w-80 shadow-md hover:shadow-xl  ${className}`}
+          className={` transition-shadow bg-gray hover:transform duration-75 hover:scale-105 w-80 shadow-md hover:shadow-xl xl:basis-1/4 relative h-[55vh] ${className}`}
         >
           <div className="flex justify-end">
             {" "}
@@ -38,9 +38,9 @@ const Card = ({ className, products }) => {
               </p>
               {/* <p className=' px-1  text-xs text-green'>{data.DiscountPercentage}</p> */}
             </div>
-            <div className="flex  px-1 ">
+            <div className="flex absolute  px-1 bottom-4">
               {/* <div className='bg-green rounded-lg flex p-1 cursor-pointer'><p className='text-white'>{data.rating}</p><i className="fa fa-star text-white text-xs pt-1"/> </div> */}
-              <div className="bg-orange rounded-lg flex py-2 px-3 cursor-pointer text-sm">
+              <div className="bg-orange rounded-lg flex pt-1.5 pb-2 px-3 cursor-pointer text-base">
                 <p className="text-white">Add to cart</p>
               </div>
             </div>
