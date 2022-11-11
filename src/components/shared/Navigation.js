@@ -1,7 +1,7 @@
 import SearchBar from '../SearchBar'
 import { NavBarLinks, NavBarIcons } from '../../utils/NavData'
 import {Link} from 'react-router-dom'
-import LoginButton from './LoginButton'
+
 
 
 const Navigation = ({ className }) => {
@@ -20,7 +20,7 @@ const Navigation = ({ className }) => {
             <div className="py-1 lg:py-4 xl:py-1 2xl:ml-40">
                 <SearchBar />
             </div>
-<LoginButton/>
+
             <div className="flex py-1.5 gap-8 lg:py-4 xl:py-1.5 lg:gap-3 xl:gap-16">
                 {NavBarIcons.map((icon) => (
                     <div>
