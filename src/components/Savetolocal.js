@@ -5,12 +5,13 @@ import {useState,useEffect} from 'react';
 export const saveToLocalStorage = ()=>{
 const use= ()=>{
  axios
- .get("https://dp-backend-e-comm.herokuapp.com/api/products")
+ .get("https://dp-backend-e-comm.herokuapp.com/api/auth/login")
  .then((response)=>{
+    console.log(response.data)
    let {token} = response.data.message
  console.log(token)
-  localStorage.setItem(token);
-  saveLocalToken()
+ localStorage.setItem('itemName', token);
+
 },)};
  
 }
