@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useEffect, useState} from 'react'
 import Button from './shared/Button'
 
 import {FaCheck} from 'react-icons/fa';
@@ -6,7 +6,7 @@ import { render } from '@testing-library/react';
 import { data } from 'autoprefixer';
 import { ArrayLogin, ArrayRagister, benefits } from '../utils/LoginData';
 import RegesterPage from './RegesterPage';
-
+import { saveToLocalStorage } from './Savetolocal';
 
 const LoginPage = () => {
 
@@ -14,7 +14,7 @@ const LoginPage = () => {
         email:"",
         password:""
     });
-
+ 
     const handleOnChange = (e) =>{
        setData({...data, [e.target.name]:e.target.value});
     }
@@ -54,7 +54,7 @@ const LoginPage = () => {
                 <form className='my-[1rem]'><input type='checkbox' />
                     <label>Remember me</label>
                 </form>
-                <Button value="Log in" onClick={((e)=>{e.preventDefault();submitData()})} className='rounded bg-orange text-white hover:bg-blue py-2 px-4 text-lg mb-2'/>
+                <Button value="Log in" onClick={((e)=>{e.preventDefault();submitData();saveToLocalStorage()})} className='rounded bg-orange text-white hover:bg-blue py-2 px-4 text-lg mb-2'/>
                 <p className='font-normal text-red-500'>Lost your Password?</p>
 
             </div>
