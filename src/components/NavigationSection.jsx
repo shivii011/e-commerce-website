@@ -17,9 +17,9 @@ useEffect(()=>{
   .get("https://dp-backend-e-comm.herokuapp.com/api/products")
   .then((response)=>{
     let {data} = response.data
-    let _data=data.slice(0,5)
-    let _data2=data.slice(5,10)
-    let _data3=data.slice(10,15)
+    let _data=data.slice(0,4)
+    let _data2=data.slice(4,8)
+    let _data3=data.slice(8,12)
     setProductdata2(_data2)
     setProductdata3(_data3)
     setProductdata(_data)})
