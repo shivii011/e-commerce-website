@@ -32,7 +32,8 @@ const LoginPage = () => {
         });
 
         const res = await userdata.json();
-        console.log(res);
+        let token  = res.data.accessToken;
+        localStorage.setItem("access-token", JSON.stringify(token))
     }
 
     return (
