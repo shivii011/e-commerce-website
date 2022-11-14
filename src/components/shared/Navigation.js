@@ -2,7 +2,10 @@ import SearchBar from '../SearchBar'
 import { NavBarLinks, NavBarIcons } from '../../utils/NavData'
 import {Link} from 'react-router-dom'
 
+
+
 const Navigation = ({ className }) => {
+
   return (
     <div className={className}>
       <div className="text-lg font-main font-bold text-white bg-gradient-to-r from-green to-blue h-14 px-8 py-2 flex gap-16 lg:h-20 xl:h-14">
@@ -17,6 +20,7 @@ const Navigation = ({ className }) => {
             <div className="py-1 lg:py-4 xl:py-1 2xl:ml-40">
                 <SearchBar />
             </div>
+
             <div className="flex py-1.5 gap-8 lg:py-4 xl:py-1.5 lg:gap-3 xl:gap-16">
                 {NavBarIcons.map((icon) => (
                     <div>
