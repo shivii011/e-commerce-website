@@ -30,6 +30,7 @@ export const SideBarData = [
         'id': 6,
         'link': 'Wishlist',
         'to': '/Wishlist',
+        
     },
     {
         'id': 7,
