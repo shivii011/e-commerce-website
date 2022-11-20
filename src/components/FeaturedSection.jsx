@@ -14,7 +14,7 @@ import axios from "axios";
 
 export default function FeaturedSection({Slides}) {
     const [products, setProducts] = useState([])
-    
+
     
   useEffect(() => {
     const getProducts = async () => {
@@ -25,9 +25,6 @@ export default function FeaturedSection({Slides}) {
     }
     getProducts()
   }, [])
-
-  
-
     Slides = 1;
     return (
         <div className="">

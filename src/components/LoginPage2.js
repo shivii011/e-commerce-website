@@ -7,6 +7,7 @@ import { ArrayLogin, ArrayRagister, benefits } from '../utils/LoginData';
 import RegesterPage from './RegesterPage';
 import { saveToLocalStorage } from './Savetolocal';
 import Authintication from './shared/Authintication';
+import axios from 'axios';
 const LoginPage = () => {
 
     const [data, setData] = useState({
@@ -21,7 +22,9 @@ const LoginPage = () => {
     const submitData = async() =>{
      
         const {email, password} = data;
-        const userdata = await fetch("https://dp-backend-e-comm.herokuapp.com/api/auth/login",{
+        const userdata = await
+        axios
+        .get("https://dp-backend-e-comm.herokuapp.com/api/auth/login",{
             method:"POST",
             headers:{
                 "Content-Type" : "application/json",

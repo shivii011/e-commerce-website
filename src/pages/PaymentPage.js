@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from './shared/Button'
+import Button from '../components/shared/Button'
 import img from '../assets/pavalion.png'
 function PaymentPage() {
     return (

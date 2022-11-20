@@ -1,6 +1,6 @@
 import React from 'react'
 import {Swiper, SwiperSlide} from "swiper/react";
-import { ProductPageData } from '../../utils/ProductPageData'; 
+import { ProductPageData } from '../utils/ProductPageData'; 
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
@@ -9,12 +9,11 @@ import "swiper/css";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-import './ProductPage.css'
+// import './shared/ProductPage.css'
 
 // import required modules
 import {EffectFlip, Pagination, Navigation} from "swiper";
-import Button from './Button';
+import Button from '../components/shared/Button';
 
 function ProductPage() {
     const [product, setProduct] = useState([])

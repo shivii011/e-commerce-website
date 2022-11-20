@@ -1,12 +1,15 @@
 import React, {useState} from 'react'
-
-import RegesterPage from './RegesterPage';
-import Button from './shared/Button';
+// import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import RegesterPage from '../components/RegesterPage';
+import Button from '../components/shared/Button';
+import { Addtocart } from '../api/cart';
 const LoginPage = () => {
     const [userEmail, setUserEmail] = useState()
     const [password, setPassword] = useState()
+   const navigate = useNavigate()
     const handleOnSubmit = async (e) => {
-        e.preventDefault()
+        // e.preventDefault()
         const res = await fetch("https://dp-backend-e-comm.herokuapp.com/api/auth/login", {
             method: "POST",
             headers: {
@@ -16,11 +19,15 @@ const LoginPage = () => {
                 userEmail,password
             })
         })
+       
         const response =await res.json();
         const token =  response.data.accessToken
-        console.log( token)
+        const message =  response.message
+        console.log( token,message)
+        console.log(message)
+        console.log("")
         localStorage.setItem("accessToken", token)
-       
+        navigate("/")
     }
 
     return (
@@ -43,15 +50,13 @@ const LoginPage = () => {
                             value={password}
                             onChange={e=>setPassword(e.target.value)}/></div>
                 </form>
-
-
                 <form className='my-[1rem]'><input type='checkbox'/>
                     <label>Remember me</label>
                 </form>
                 <Button value="Log in"
-                   onClick={handleOnSubmit }
+                   onClick={((e)=>{ handleOnSubmit();Addtocart();})}
     
-                    className='rounded bg-orange text-white hover:bg-blue py-2 px-4 text-lg mb-2'/>
+                    className='rounded bg-orange text-white hover:bg-blue py-2 px-4 text-lg mb-2'/>  
                 <p className='font-normal text-red-500'>Lost your Password?</p>
 
             </div>

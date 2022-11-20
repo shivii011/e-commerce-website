@@ -3,10 +3,10 @@ import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
 import Contact from './pages/Contact'
 import Layout from './components/shared/Layout'
-import PaymentPage from './components/PaymentPage'
-import LoginPage from './components/LoginPage'
-import WishList from './components/Wishlist'
-import ProductPage from './components/shared/ProductPage'
+import PaymentPage from './pages/PaymentPage'
+import LoginPage from './pages/LoginPage'
+import WishList from './pages/Wishlist'
+import ProductPage from './pages/ProductPage'
 
 const App = () => {
   return (
